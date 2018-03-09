@@ -5,11 +5,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Barbershop - для настоящих мужчин!</title>
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="preload" href="/fonts/ptsansnarrowbold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/ptsansnarrow.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body class="page-body">
+    <main class="contet">
 
-    
+<!-- header block -->
+        <header class="page-head">
+            <nav class="page-head__nav-block">
+                <input class="burger-menu__checkbox" type="checkbox" id="checkbox_icon" hidden>
+			    <label class="burger-menu__icon" for="checkbox_icon">
+				    <span class="burger-menu__icon_line"></span>
+			    </label>
+                <ul class="nav-menu">
+                    <li class="nav-menu__item curent-page">
+						<a class="link" href="/index.html">
+							<span class="link__text">Главная</span>
+						</a>
+					</li>
+                    <li class="nav-menu__item">
+						<a class="link" href="/pages/our-works.html">
+							<span class="link__text">Наши работы</span>
+						</a>
+					</li>
+                    <li class="nav-menu__item">
+						<a class="link" href="/pages/appointment.html">
+							<span class="link__text">Записаться</span>
+						</a>
+					</li>
+                    <li class="nav-menu__item">
+						<a class="link" href="/pages/contact.html">
+							<span class="link__text">Контакты</span>
+						</a>
+					</li>
+                    <li class="nav-menu__item">
+						<a class="link" href="">
+							<span class="link__text">HTML Academy</span>
+						</a>
+					</li>
+                </ul>
+                <ul class="nav-menu">
+                    <li class="nav-menu__item nav-menu__item_login">
+						<a class="link" href="/pages/login.html">
+							<span class="link__text link__text_login">Вход</span>
+						</a>
+					</li>
+                </ul>
+            </nav>
+			<section class="page-head__head-banner logo-icon">
+                <h1 class="h1 visibility-hidden">Barbershop - для настоящих мужчин!</h1>
+            </section>
+        </header>
+<!-- end header block -->
 
+<!-- content block -->
+        <!-- features section -->
+        <section class="features">
+            <div class="feature feature_theme_white">
+                <h2 class="h2 feature__title">Стрижка у нас это выгодно!</h2>
+                <p class="feature__description">Мужская стрижка требует точного подхода. Обратимся к статистике</p>
+                <p class="feature__description feature__description_lies">* — приведённые данные ложь</p>
+            </div>
+            <div class="features__block">
+                <div class="feature feature_theme_black">
+					<p class="feature__title">1 500 *</p>
+					<p>рублей вложений</p>
+				</div>
+				<div class="feature feature_theme_grey">
+					<p class="feature__title">7 200</p>
+					<p class="feature__description">секунд времени мастера</p>
+                </div>
+				<div class="feature feature_theme_black">
+					<p class="feature__title">90 000</p>
+					<p class="feature__description">постриженных волос</p>
+                </div>
+				<div class="feature feature_theme_grey">
+					<p class="feature__title">500 000 *</p>
+					<p class="feature__description">лайков и комплиментов</p>
+				</div>
+                <p class="feature__description feature__description_lies">* — приведённые данные ложь</p>
+            </div>
+
+            <div class="features__block">
+                    <input type="radio" name="feature" checked hidden>
+                    <input type="radio" name="feature" hidden>
+                    <input type="radio" name="feature" hidden>
+				<div class="feature feature_theme_black feature-icon feature-icon_first" id="feature1">
+						<p class="feature__title">БЫСТРО</p>
+						<p class="feature__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки</p>
+				</div>
+				<div class="feature feature_theme_black feature-icon feature-icon_second" id="feature2">
+						<p class="feature__title">КРУТО</p>
+						<p class="feature__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
+				</div>
+				<div class="feature feature_hide feature_theme_black feature-icon feature-icon_third" id="feature3">
+						<p class="feature__title">ДОРОГО</p>
+						<p class="feature__description">Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+                </div>
+                <div class="toggle-radio-block">
+                        <label class="toggle-radio-block__radio" for="feature1"></label>
+                        <label class="toggle-radio-block__radio" for="feature2"></label>
+                        <label class="toggle-radio-block__radio" for="feature3"></label>
+                </div>
+			</div>
+        </section>
+        <!-- end features section -->
+
+        <!-- news section -->
+        <section class="news-section">
+            <h2 class="h2 news-section__title">Новости и акции</h2>
+			<div class="news">
+				<time class="news__date" datetime="2017-09-28">28 сентября</time>
+				<p class="">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
+			</div>
+            <div class="news">
+				<time class="news__date" datetime="2017-09-19">19 сентября</time>
+				<p class="">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
+			</div>
+            <div class="news">
+				<time class="news__date" datetime="2017-09-09">9 сентября</time>
+				<p class="">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
+            </div>
+            <div class="news">
+				<time class="news__date" datetime="2017-09-08">8 сентября</time>
+				<p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt earum saepe asperiores labore? Modi, expedita!</p>
+            </div>
+            <div class="news">
+				<time class="news__date" datetime="2017-09-07">7 сентября</time>
+				<p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laudantium non iure dicta quibusdam cum itaque natus architecto. Modi, in.</p>
+            </div>
+            <button class="button" type="button"><span>показать все</span></button>
+        </section>
+        <!-- end news section -->
+
+        <!-- reviews section -->
+        <section class="reviews">
+            <h2 class="h2 reviews__title">Отзывы о нас</h2>
+            <a href=""><span>Оставить свой</span></a>
+            <input type="radio" name="reviews" checked hidden>
+            <input type="radio" name="reviews" hidden>
+            <input type="radio" name="reviews" hidden>
+            <div class="reviews__review reviews__review_1" id="review1">
+                <img src="/img/barker-desktop.jpg" alt="Трэвис Баркер - лысый хрен">
+                <h3 class="h3">Трэвис Баркер</h3>
+                <p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+            </div>
+            <div class="reviews__review reviews__review_2" id="review2">
+                <img src="/img/barker-desktop.jpg" alt="Еще один Трэвис Баркер">
+                <h3 class="h3">Трэвис Баркер</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, consequatur ducimus. Saepe fugiat error voluptatum.</p>
+            </div>
+            <div class="reviews__review reviews__review_2" id="review3">
+                <img src="/img/barker-desktop.jpg" alt="Двойник Трэвис Баркера">
+                <h3 class="h3">Трэвис Баркер</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, minima.</p>
+            </div>
+            <div class="toggle-radio-block">
+                <label class="toggle-radio-block__radio" for="review1"></label>
+                <label class="toggle-radio-block__radio" for="review2"></label>
+                <label class="toggle-radio-block__radio" for="review2"></label>
+            </div>
+        </section>
+        <!-- end reviewssection -->
+<!-- end content block -->
+
+<!-- start footer -->
+        <footer class="footer" role="contentinfo">
+            <div class="footer-content">
+                <section class="footer__block footer__block_location" aria-label="Наш адрес">
+                    <p>барбершоп бородинский</p>
+                    <address class="address">г. москва, г. троицк, троицкий бульвар, д.5</address>
+                    <a class="link phone" href="tel:+74951111111" rel="nofollow">телефон: +7 (495) 111-11-11</a>    
+                </section>
+                <section class="footer__block" aria-label="Мы в социальных сетях">
+                    <p>давайте дружить!</p>
+                    <ul class="socials footer__block_socials">
+                        <li class="socials__social" title="Вконтакте">
+                            <a class="icon-social icon-social icon-social_vk" href="#" target="_blank">
+                                <span class="visibility-hidden">Вконтакте</span>
+                            </a>
+                        </li>
+                        <li class="socials__social" title="Facebook" >
+                            <a class="icon-social icon-social_facebook" href="#" target="_blank">
+                                <span class="visibility-hidden">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="socials__social" title="Instagramm" >
+                            <a class="icon-social icon-social_insta" href="#" target="_blank">
+                                <span class="visibility-hidden">Instagramm</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="footer__block footer__block_maker" aria-label="Кем разработано">
+                    <p>разработано:</p>
+                    <a class="link footer__block_maker_link" href="https://github.com/slavak-ru" target="_blank">slavak-ru</a>
+                </section>
+            </div>
+        </footer>
+<!-- end footer -->
+
+    </main>
+
+<!-- login popup -->
+    <section class="popup__wrapper" aria-label="Форма входа в личный кабинет" hidden>
+		<div class="popup popup-login">
+			<h2 class="popup__title">личный кабинет</h2>
+			<p>введите пожалуйста свой логин и пароль</p>
+			<form class="form form_login" action="https://echo.htmlacademy.ru" method="post" role="form">
+				<span class="input__icon login-icon"><input type="text" name="username" placeholder="ЛОГИН" required autofocus></span>
+				<span class="input__icon passwod-icon"><input type="password" name="password" placeholder="ПАРОЛЬ" required></span>
+				<label class="label form__label">
+					<input class="form__input form__input_checkbox" type="checkbox" name="save">
+					<span class="input__text">запомните меня</span>
+				</label>
+				<a href="#">я забыл пароль!</a>
+				<input class="button button_big" type="submit" name="submit" value="ВОЙТИ В ЛИЧНЫЙ КАБИНЕТ">
+			</form>
+			<button class="close-button" type="button">+</button>
+		</div>
+    </section>
+<!-- end login popup -->
 </body>
 </html>

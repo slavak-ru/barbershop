@@ -1,2 +1,5 @@
 # barbershop2
-Educational project with automatic building and use preprocessors (sass), BEM methodology.
+Educational project with 
+    automatic building, 
+    use preprocessors (sass), 
+    use BEM methodology (prtly).

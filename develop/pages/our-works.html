@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Barbershop: Наши работы</title>
+    <link rel="preload" href="/fonts/ptsansnarrowbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/ptsansnarrow.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="page-body">
+    <main class="contet">
+
+<!-- header block -->
+        <header class="page-head">
+            <nav class="page-head__nav-block">
+                <input class="burger-menu__checkbox" type="checkbox" id="checkbox_icon" hidden>
+                <label class="burger-menu__icon" for="checkbox_icon">
+                    <span class="burger-menu__icon_line"></span>
+                </label>
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a class="link" href="/index.html">
+                            <span class="link__text">Главная</span>
+                        </a>
+                    </li>
+                    <li class="nav-menu__item curent-page">
+                        <a class="link" href="/pages/our-works.html">
+                            <span class="link__text">Наши работы</span>
+                        </a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="link" href="/pages/appointment.html">
+                            <span class="link__text">Записаться</span>
+                        </a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="link" href="/pages/contact.html">
+                            <span class="link__text">Контакты</span>
+                        </a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="link" href="">
+                            <span class="link__text">HTML Academy</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav-menu">
+                    <li class="nav-menu__item nav-menu__item_login">
+                        <a class="link" href="/pages/login.html">
+                            <span class="link__text link__text_login">Вход</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="page-head__head-banner logo-icon">
+                <h1 class="h1 visibility-hidden">Barbershop - наши работы!</h1>
+            </section>
+        </header>
+<!-- end header block -->
+
+    <!-- content block -->
+        <h2 class="h2 our-work__title">Наши работы</h2>
+        <a class="bread-crumbs" href="/index.html"><span class="bread-crumbs__text">на главную</span></a>
+        <section class="work">
+            <span class="work__best">Работа месяца</span>
+            <picture class="work__picture">
+                <!-- десктоп -->
+                <source 
+                    media="(min-width: 960px)"
+                    srcset="/img/photo-1-desktop.jpg">
+                <!-- планшет -->
+                <source
+                    media="(min-width: 640px)"
+                    srcset="/img/photo-1-tablet.jpg">
+                <img src="/img/photo-1-mobile.jpg" alt="Потерпевший Лжепётр Мчиславский" title="Потерпевший Лжепётр Мчиславский">
+            </picture>
+            
+            <div class="victim__content">
+                <h3 class=" h3 victim__name">Лжепётр Мчиславский</h3>
+                <p class="victim__subject">Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
+                <svg class="victim__icon scissors-icon">
+                    <use xlink:href="/img/symbols.svg#scissors-icon"></use>
+                    <span class="victim__icon_text">Стрижка</span>
+                </svg>
+                <svg class="victim__icon beard-icon">
+                    <use xlink:href="/img/symbols.svg#beard-icon"></use>
+                    <span class="victim__icon_text">Бритье</span>
+                </svg>
+                <svg class="victim__icon mustache-icon">
+                    <use xlink:href="/img/symbols.svg#mustache-icon"></use>
+                    <span class="victim__icon_text">Усы</span>
+                </svg>
+            </div>
+        </section>
+
+        <section class="work">
+            <picture class="work__picture">
+                <!-- десктоп -->
+                <source 
+                    media="(min-width: 960px)"
+                    srcset="/img/photo-2-desktop.jpg">
+                <!-- планшет -->
+                <source
+                    media="(min-width: 640px)"
+                    srcset="/img/photo-2-tablet.jpg">
+                <img src="/img/photo-2-mobile.jpg" alt="Потерпевший Саша Мальцев" title="Потерпевший Саша Мальцев">
+            </picture>
+            
+            <div class="victim__content">
+                <h3 class="h3 victim__name">Саша Мальцев</h3>
+                <p class="victim__subject">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
+                <svg class="victim__icon scissors-icon">
+                    <use xlink:href="/img/symbols.svg#scissors-icon"></use>
+                    <span class="victim__icon_text">Стрижка</span>
+                </svg>
+            </div>
+        </section>
+
+        <section class="work">
+            <picture class="work__picture">
+                <!-- десктоп -->
+                <source 
+                    media="(min-width: 960px)"
+                    srcset="/img/photo-3-desktop.jpg">
+                <!-- планшет -->
+                <source
+                    media="(min-width: 640px)"
+                    srcset="/img/photo-3-tablet.jpg">
+                <img src="/img/photo-3-mobile.jpg" alt="Потерпевший Владимир Иваныч" title="Потерпевший Владимир Иваныч">
+            </picture>
+
+            <div class="victim__content">
+                <h3 class="h3 victim__name">Владимир Иваныч</h3>
+                <p class="victim__subject">К зимнему сезону — готов!</p>
+                <svg class="victim__icon beard-icon">
+                        <use xlink:href="/img/symbols.svg#beard-icon"></use>
+                        <span class="victim__icon_text">Борода</span>
+                </svg>
+                <svg class="victim__icon mustache-icon">
+                    <use xlink:href="/img/symbols.svg#mustache-icon"></use>
+                    <span class="victim__icon_text">Усы</span>
+                </svg>
+            </div>
+        </section>
+       
+        <section class="work">
+            <picture class="work__picture">
+                <!-- десктоп -->
+                <source 
+                    media="(min-width: 960px)"
+                    srcset="/img/photo-4-desktop.jpg">
+                <!-- планшет -->
+                <source
+                    media="(min-width: 640px)"
+                    srcset="/img/photo-4-tablet.jpg">
+                <img src="/img/photo-4-mobile.jpg" alt="Потерпевший Винстон Синий" title="Потерпевший Винстон Синий">
+            </picture>
+            
+            <div class="victim__content">
+                <h3 class="h3 victim__name">Винстон Синий</h3>
+                <p class="victim__subject">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+                <svg class="victim__icon scissors-icon">
+                    <use xlink:href="/img/symbols.svg#scissors-icon"></use>
+                    <span class="victim__icon_text">Стрижка</span>
+                </svg>
+            </div>
+        </section>
+    
+        <!-- price-block -->
+        <section class="prices__section">
+            <h2 class="h2 prices__title">ПРЕЙСКУРАНТ</h2>
+            <div class="price-table">
+                <div class="price-table__row">
+                    <div class="price-table__number">1</div>
+                    <div class="price-table__type">Классическая стрижка</div>
+                    <div class="price-table__species">с мытьём головы</div>
+                    <div class="price-table__price">1 500 руб. </div>
+                </div>
+                <div class="price-table__row">
+                    <div class="price-table__number">2</div>
+                    <div class="price-table__type">Современный вариант</div>
+                    <div class="price-table__species">с мытьём головы</div>
+                    <div class="price-table__price">1 500 руб. </div>
+                </div>
+                <div class="price-table__row">
+                    <div class="price-table__number">3</div>
+                    <div class="price-table__type">Индивидуальный подход</div>
+                    <div class="price-table__species">с мытьём головы</div>
+                    <div class="price-table__price">2 000 руб. </div>
+                </div>
+                <div class="price-table__row">
+                    <div class="price-table__number">4</div>
+                    <div class="price-table__type">Бритьё бороды</div>
+                    <div class="price-table__species">без мытья</div>
+                    <div class="price-table__price">500 руб. </div>
+                </div>
+                <div class="price-table__row">
+                    <div class="price-table__number">5</div>
+                    <div class="price-table__type">Бритьё головы</div>
+                    <div class="price-table__species">с мытьём головы</div>
+                    <div class="price-table__price">1 000 руб. </div>
+                </div>
+            </div>
+            <div class="work-time">
+                <span class="work-time__text clock-desktop">C 10:00 до 14:00 скидка 20%</span>
+            </div>
+        </section>
+        <!-- end price-block -->
+    
+    <!-- end content block -->
+
+    <!-- start footer -->
+        <footer class="footer" role="contentinfo">
+            <div class="footer-content">
+                <section class="footer__block footer__block_location" aria-label="Наш адрес">
+                    <p>барбершоп бородинский</p>
+                    <address class="address">г. москва, г. троицк, троицкий бульвар, д.5</address>
+                    <a class="link phone" href="tel:+74951111111" rel="nofollow">телефон: +7 (495) 111-11-11</a>    
+                </section>
+                <section class="footer__block" aria-label="Мы в социальных сетях">
+                    <p>давайте дружить!</p>
+                    <ul class="socials footer__block_socials">
+                        <li class="socials__social" title="Вконтакте">
+                            <a class="icon-social icon-social icon-social_vk" href="#" target="_blank">
+                                <span class="visibility-hidden">Вконтакте</span>
+                            </a>
+                        </li>
+                        <li class="socials__social" title="Facebook" >
+                            <a class="icon-social icon-social_facebook" href="#" target="_blank">
+                                <span class="visibility-hidden">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="socials__social" title="Instagramm" >
+                            <a class="icon-social icon-social_insta" href="#" target="_blank">
+                                <span class="visibility-hidden">Instagramm</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="footer__block footer__block_maker" aria-label="Кем разработано">
+                    <p>разработано:</p>
+                    <a class="link footer__block_maker_link" href="https://github.com/slavak-ru" target="_blank">slavak-ru</a>
+                </section>
+            </div>
+        </footer>
+    <!-- end footer -->
+    </main>
+
+<!-- login popup -->
+    <section class="popup__wrapper" aria-label="Форма входа в личный кабинет" hidden>
+        <div class="popup popup-login">
+            <h2 class="popup__title">личный кабинет</h2>
+            <p>введите пожалуйста свой логин и пароль</p>
+            <form class="form form_login" action="https://echo.htmlacademy.ru" method="post" role="form">
+                <span class="input__icon login-icon"><input type="text" name="username" placeholder="ЛОГИН" required autofocus></span>
+                <span class="input__icon passwod-icon"><input type="password" name="password" placeholder="ПАРОЛЬ" required></span>
+                <label class="label form__label">
+                    <input class="form__input form__input_checkbox" type="checkbox" name="save">
+                    <span class="input__text">запомните меня</span>
+                </label>
+                <a href="#">я забыл пароль!</a>
+                <input class="button button_big" type="submit" name="submit" value="ВОЙТИ В ЛИЧНЫЙ КАБИНЕТ">
+            </form>
+            <button class="close-button" type="button">+</button>
+        </div>
+    </section>
+<!-- end login popup -->
+
+</body>
+</html>

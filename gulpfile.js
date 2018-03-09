@@ -1,8 +1,8 @@
 /*
 * First attemp the automatic buildig of the project
 * Next targets:
-* gulpfile decomposition to task-jsfiles with lazy style (https://www.youtube.com/watch?v=Qc6go3cNuRk&index=12&list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ)
-* project decomposition to elements with separate folders
+* gulpfile decomposition to the task-jsfiles with lazy style (https://www.youtube.com/watch?v=Qc6go3cNuRk&index=12&list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ)
+* project decomposition to elements with separate css-files and folders
 * use PostCss with Stylus and others inside the PostCss (mybee) 
 * use in public minification and rename css file
 */
@@ -102,7 +102,7 @@ gulp.task("images", function() {
 
 gulp.task("assets", function () {
         
-    return gulp.src(["develop/*.html", "develop/fonts/**/*.{wof, wof2}", "develop/js/**", "develop/pages/**"], {base: "develop"}, {read:false}, {since: gulp.lastRun("assets")})
+    return gulp.src(["develop/*.html", "develop/fonts/**/*.{woff, woff2}", "develop/js/**", "develop/pages/**"], {base: "develop"}, {since: gulp.lastRun("assets")})
         .pipe(newer("pre-production"))
         .pipe(gulp.dest("pre-production"))
         .pipe(debug({title: "assets"}));
@@ -135,4 +135,3 @@ gulp.task("dev", gulp.series("build", gulp.parallel("watch", "serve")));
 
 // gulp.task("dev", gulp.series("build", gulp.parallel("watch"))
 // );
-// добавить svg
