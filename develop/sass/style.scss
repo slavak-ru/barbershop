@@ -1,3 +1,75 @@
-@import "font-face";
+@import "library.blocks/font-face.scss";
 
-@import "page-body";
+@import "library.blocks/variables.scss";
+
+@import "library.blocks/visibility-hidden.scss";
+
+@import "library.blocks/page-body.scss";
+
+@import "library.blocks/page-body/page-body__theme_bs.scss";
+
+@import "library.blocks/page-body/page-layout.scss";
+
+@import "library.blocks/page-body/page-content.scss";
+
+@import "library.blocks/link/link.scss";
+
+@import "library.blocks/link/link_menu.scss";
+
+@import "library.blocks/link/link_menu-login.scss";
+
+@import "library.blocks/link/link__text_login.scss";
+
+@import "library.blocks/page-head/page-head.scss";
+
+@import "library.blocks/page-head/page-head__nav-block.scss";
+
+@import "library.blocks/page-head/page-head__nav.scss";
+
+@import "library.blocks/nav-menu/nav-menu.scss";
+
+@import "library.blocks/nav-menu/nav-menu__item.scss";
+
+@import "library.blocks/nav-menu/nav-menu__item_login.scss";
+
+@import "library.blocks/page-head/page-head__head-banner.scss";
+
+@import "library.blocks/logo-icon.scss";
+
+@import "library.blocks/burger-menu/burger-menu__checkbox.scss";
+
+@import "library.blocks/burger-menu/burger-menu__icon.scss";
+
+@import "library.blocks/login__icon.scss";
+
+@import "library.blocks/curent-page.scss";
+
+@import "library.blocks/footer/footer.scss";
+
+@import "library.blocks/footer/footer__theme_bs.scss";
+
+@import "library.blocks/footer/footer-content.scss";
+
+@import "library.blocks/footer/footer-block.scss";
+
+@import "library.blocks/footer/footer__block_location.scss";
+
+@import "library.blocks/footer/footer-block__title.scss";
+
+@import "library.blocks/footer/footer__adress.scss";
+
+@import "library.blocks/footer/footer-block__phone.scss";
+
+@import "library.blocks/footer/footer__block_socials.scss";
+
+@import "library.blocks/footer/footer-block_maker.scss";
+
+@import "library.blocks/footer/footer-block__menu.scss";
+
+@import "library.blocks/footer/footer-block__menu_item.scss";
+
+@import "library.blocks/footer/footer-block__menu_link.scss";
+
+@import "library.blocks/footer/footer-block__menu_icon.scss";
+
+@import "library.blocks/footer/footer-block__link_maker.scss";

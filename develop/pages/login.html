@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Barbershop - для настоящих мужчин!</title>
+	<link rel="preload" href="/fonts/ptsansnarrowbold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/ptsansnarrow.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="page-body">
+        <div class="page-layout">
+
+        <!-- header block -->
+            <header class="page-head">
+                <div class="page-head__nav-block">
+                                
+                    <input class="burger-menu__checkbox" type="checkbox" id="checkbox_icon">
+                    <label class="burger-menu__icon" for="checkbox_icon">
+                        <span class="burger-menu__icon_line"></span>
+                    </label>
+                    <nav class="page-head__nav">
+                        <ul class="nav-menu nav-menu_main">
+                            <li class="nav-menu__item ">
+                                <a class="link link_menu" href="/index.html">
+                                    <span class="link__text">Главная</span>
+                                </a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="link  link_menu" href="/pages/our-works.html">
+                                    <span class="link__text">Наши работы</span>
+                                </a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="link link_menu" href="/pages/appointment.html">
+                                    <span class="link__text">Записаться</span>
+                                </a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="link link_menu" href="/pages/contact.html">
+                                    <span class="link__text">Контакты</span>
+                                </a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="link link_menu" href="">
+                                    <span class="link__text">HTML Academy</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-menu">
+                            <li class="nav-menu__item nav-menu__item_login">
+                                <a class="link link_menu link_menu-login curent-page" href="/pages/login.html">
+                                    <svg class="login__icon">
+                                        <use xlink:href="/img/symbols.svg#signin"></use>
+                                    </svg>
+                                    <span class="link__text link__text_login">Вход</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                                
+                </div>
+                <section class="page-head__head-banner logo-icon">
+                    <h1 class="h1 visibility-hidden">Barbershop - для настоящих мужчин!</h1>
+                </section>
+            </header>
+        <!-- end header block -->
+            <main class="page-content">    
+
+<!-- content block -->
+    <section class="login">
+        <h2 class="login__header">введите пожалуйста свой логин и пароль</h2>
+        <form class="form form_login" action="https://echo.htmlacademy.ru" method="post" role="form">
+            <span class="after">
+                <input class="login__input-text" type="text" name="username" placeholder="ЛОГИН" required autofocus>
+            </span>
+            <span class="after">
+                <input class="login__input-password" type="password" name="password" placeholder="ПАРОЛЬ" required>
+            </span>
+            <div class="ligin__wrapper">
+                <label class="login__checkbox">
+                    <input type="checkbox" name="save">
+                    <span>запомните меня</span>
+                </label>
+                <a class="link login__forgote" href="#">я забыл пароль!</a>
+            </div>
+            <input class="button button_big" type="submit" name="submit" value="ВОЙТИ В ЛИЧНЫЙ КАБИНЕТ">
+        </form>
+    </section>
+
+<!-- end content block -->
+
+            </main>
+<!-- start footer -->
+        <footer class="footer footer__theme_bs" role="contentinfo">
+            <div class="footer-content">
+                <section class="footer-block footer__block_location" aria-label="Наш адрес">
+                    <h2 class="footer-block__title">Барбершоп Бородинский</h2>
+                    <address class="address footer__adress">г. Москва, г. Троицк, Троицкий Бульвар, д.5</address>
+                    <a class="link footer-block__phone" href="tel:+79262168324" rel="nofollow"><span class="footer-block__phone_text">Тел:</span> +7 (926) 216-83-24</a>    
+                </section>
+
+                <section class="footer-block footer__block_socials" aria-label="Мы в социальных сетях">
+                    <p class="footer-block__title footer-block__title_social">Давайте дружить!</p>
+                    <ul class="footer-block__menu">
+                        <li class="footer-block__menu_item" title="Вконтакте">
+                            <a class="footer-block__menu_link socials__icon_vk" href="#" target="_blank">
+                                <svg class="footer-block__menu_icon footer__icon">
+                                    <use xlink:href="/img/symbols.svg#vk-icon"></use>
+                                </svg>
+                                <span class="visibility-hidden">Вконтакте</span>
+                            </a>
+                        </li>
+                        <li class="footer-block__menu_item" title="Facebook" >
+                            <a class="footer-block__menu_link socials__icon_facebook" href="#" target="_blank">
+                                <svg class="footer-block__menu_icon">
+                                    <use xlink:href="/img/symbols.svg#facebook-icon"></use>
+                                </svg>
+                                <span class="visibility-hidden">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="footer-block__menu_item" title="Instagramm" >
+                            <a class="footer-block__menu_link socials__icon__insta" href="#" target="_blank">
+                                <svg class="footer-block__menu_icon">
+                                    <use xlink:href="/img/symbols.svg#insta-icon"></use>
+                                </svg>
+                                <span class="visibility-hidden">Instagramm</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="footer-block footer-block_maker" aria-label="Кем разработано">
+                    <p class="footer-block__title footer-block__title_maker">Pазработано:</p>
+                    <a class="link footer-block__link_maker" href="https://github.com/slavak-ru" target="_blank">slavak-ru</a>
+                </section>
+            </div>
+        </footer>
+<!-- end footer -->
+    
+    </div>
+
+</body>
+</html>

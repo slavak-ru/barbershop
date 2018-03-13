@@ -102,7 +102,7 @@ gulp.task("images", function() {
 
 gulp.task("assets", function () {
         
-    return gulp.src(["develop/*.html", "develop/fonts/**/*.{woff, woff2}", "develop/js/**", "develop/pages/**"], {base: "develop"}, {since: gulp.lastRun("assets")})
+    return gulp.src(["develop/*.html", "develop/fonts/**/*.{woff2,woff}", "develop/js/**", "develop/pages/**"], {base: "develop"}, {since: gulp.lastRun("assets")})
         .pipe(newer("pre-production"))
         .pipe(gulp.dest("pre-production"))
         .pipe(debug({title: "assets"}));

@@ -1,0 +1,38 @@
+.footer-block__menu_link {
+  display: block;
+  width: $mini-devices / 3;
+  height: $mini-devices / 3;
+  margin: auto;
+  margin-left: -0.5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  border: 1px solid #3e3e3e;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid #515151;
+  }
+
+  &:active {
+    background-color: #252525;
+    border: 1px solid #252525;
+  }
+
+  @media (min-width: $medium-devices) {
+    width: $medium-devices / 3;
+    height: 100px;
+    margin-left: 0px;
+
+  }
+  
+  @media (min-width: $large-devices) {
+    width: 50px;
+    height: 50px;
+
+  }
+}

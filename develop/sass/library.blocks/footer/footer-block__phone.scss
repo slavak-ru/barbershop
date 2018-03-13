@@ -1,0 +1,50 @@
+.footer-block__phone {
+  width: 280px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px 0;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  border: 1px solid #3e3e3e;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid #515151;
+    color: #808080;
+  }
+
+  &:active {
+    background-color: #252525;
+    border: 1px solid #252525;
+  }
+
+  @media (min-width: $medium-devices) { 
+    margin-top: 0;
+    font-weight: normal;
+    border: none;  
+
+    &:hover {
+      border: none;
+    }
+  
+    &:active {
+      border: none;
+    }
+  }
+
+  @media (min-width: $large-devices) {
+    padding: 0;
+  }
+
+  &_text {
+    display: none;
+
+    @media (min-width: $large-devices) {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

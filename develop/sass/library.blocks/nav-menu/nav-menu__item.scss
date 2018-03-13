@@ -1,0 +1,22 @@
+.nav-menu__item {
+  display: block;
+  
+
+  line-height: 50px;
+  list-style: none;
+}
+
+
+
+.burger-menu__checkbox:checked ~ 
+  .page-head__nav
+  .nav-menu
+  .nav-menu__item {
+    border-top: 1px solid #886e5b;
+    border-left: 1px solid #604a3b;
+    border-bottom: 1px solid #71543f;
+
+    @media (min-width: $medium-devices) { 
+      border: none;
+    }
+}

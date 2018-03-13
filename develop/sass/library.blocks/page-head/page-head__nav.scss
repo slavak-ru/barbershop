@@ -1,0 +1,39 @@
+.page-head__nav {
+//  width: 250px;
+  height: 50px;
+  
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+//  border: 1px solid blue;
+
+  @media (min-width: $medium-devices) { 
+    max-width: $medium-devices;
+    height: 70px;
+    margin: auto;
+    padding: 0 50px 0 45px;
+//    border: 1px solid red;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $large-devices) { 
+    max-width: 760px;
+  }
+}
+
+
+.burger-menu__checkbox:checked ~
+.page-head__nav {
+  z-index: 100;
+  overflow: visible;
+}

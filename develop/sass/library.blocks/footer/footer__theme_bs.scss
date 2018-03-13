@@ -1,0 +1,31 @@
+.footer__theme_bs {
+  position: relative;
+  margin: auto;
+  
+  padding-top: 30px;
+
+  box-sizing: border-box;
+  background-color: #292929;
+
+  @media (min-width: $medium-devices) {
+    padding-top: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    width: $mini-devices;
+    box-sizing: border-box;
+
+    background-color: #282828;
+    border-top: 35px solid #f8f5f2;
+    border-bottom: 1px solid #3d3d3d;
+    border-left: $mini-devices / 2 solid transparent;
+    border-right: $mini-devices / 2 solid transparent;
+
+    @media (min-width: $medium-devices) {
+      display: none;
+    }
+  }
+}

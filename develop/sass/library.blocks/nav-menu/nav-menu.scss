@@ -1,0 +1,18 @@
+.nav-menu {
+  margin: 0;
+  padding: 0;
+
+  
+  &_main{
+//    border: 1px solid red;
+    @media (min-width: $medium-devices) { 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+//       width: 500px;
+      flex-grow: 1;
+      margin-right: 50px;
+      
+    }
+  }
+}

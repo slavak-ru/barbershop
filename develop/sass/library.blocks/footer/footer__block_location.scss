@@ -1,0 +1,12 @@
+.footer__block_location {
+  @media (min-width: $medium-devices) {
+    margin-top: 15px;
+
+  }
+  
+  @media (min-width: $large-devices) {
+    margin-top: 0;
+    margin-left: 115px;
+
+  }
+}

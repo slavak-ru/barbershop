@@ -1,0 +1,15 @@
+.page-content {
+  margin: auto;
+  width: $mini-devices;
+
+  @media (min-width: $medium-devices) { 
+    width: $medium-devices;  
+  }
+
+  @media (min-width: $large-devices) { 
+    width: $large-devices;  
+  }
+
+  background-color: $background-color;
+
+}

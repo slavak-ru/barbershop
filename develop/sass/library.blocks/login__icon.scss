@@ -1,0 +1,66 @@
+.login__icon {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  left: 75px;
+
+  &:active {
+    fill: #978374;
+  }
+
+  @media (min-width: $medium-devices) { 
+    left: 30px;
+    top: 20px;
+    
+    &:hover {
+      fill: #67503f;
+    }
+    
+    &:active {
+      fill: #383838;
+    }
+  }
+
+  @media (min-width: $large-devices) { 
+    left: 10px;
+    top: 20px;
+
+    &:hover {
+      fill: #000000;
+    }
+    
+    &:active {
+      fill: #b2b2b2;
+    }
+  }
+
+}
+
+.nav-menu__item_login:hover .login__icon {
+  @media (min-width: $medium-devices) {
+    fill: #67503f;
+  }
+}
+
+.nav-menu__item_login:active .login__icon {
+  fill: #383838;
+  
+  @media (min-width: $medium-devices) {
+    fill: #383838;
+  }
+}
+
+.nav-menu__item_login:hover .login__icon {
+  @media (min-width: $large-devices) {
+    fill: #000000;
+  }
+}
+
+.nav-menu__item_login:active .login__icon {
+  
+  @media (min-width: $large-devices) {
+    fill: #b2b2b2;
+  }
+}

@@ -1,0 +1,10 @@
+.page-layout {
+  display: flex;
+  flex-direction: column;
+
+  margin: auto;
+  min-height: 100vh;
+  z-index: 1;
+
+  background-color: $background-color-body;
+} 

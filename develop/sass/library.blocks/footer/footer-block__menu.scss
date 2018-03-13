@@ -1,0 +1,22 @@
+.footer-block__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 0;
+  margin: auto;
+  margin-top: 18px; 
+  list-style: none;
+
+
+    @media (min-width: $medium-devices) {
+      width: 100%;
+      margin-top: 0; 
+    }
+
+    @media (min-width: $large-devices) {
+      width: 100%;
+      margin-top: 0; 
+    }
+}

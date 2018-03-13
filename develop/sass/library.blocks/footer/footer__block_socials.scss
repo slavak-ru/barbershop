@@ -1,0 +1,17 @@
+.footer__block_socials {
+  
+  @media (min-width: $medium-devices) {
+    order: 3;
+    width: 100%;
+
+    margin-top: 28px;
+  }
+  
+  @media (min-width: $large-devices) {
+    order: 2;
+    width: 163px;
+    padding: 0;
+    margin: auto;
+    margin-top: 0;
+  }
+}

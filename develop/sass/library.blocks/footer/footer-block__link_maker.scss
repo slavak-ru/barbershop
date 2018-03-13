@@ -1,0 +1,28 @@
+.footer-block__link_maker {
+  text-transform: uppercase;
+  font-weight: bold;
+
+  width: 280px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px 0;
+
+  border: 1px solid #3e3e3e;
+
+  &:hover {
+    border: 1px solid #515151;
+    color: #808080;
+  }
+
+  &:active {
+    background-color: #252525;
+    border: 1px solid #252525;
+  }
+
+  @media (min-width: $medium-devices) {
+    width: 160px;
+    padding: 10px 0;
+
+    text-align: center;
+  }
+}
