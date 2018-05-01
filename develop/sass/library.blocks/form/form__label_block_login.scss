@@ -1,0 +1,18 @@
+.form__label_block_login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $medium-devices) {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+  
+  @media (min-width: $large-devices) {
+    padding-left: 190px;
+    padding-right: 190px;
+    margin-bottom: 45px;
+  }
+}

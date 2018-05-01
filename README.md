@@ -2,4 +2,4 @@
 Educational project with 
     automatic building, 
     use preprocessors (sass), 
-    use BEM methodology (prtly).
+    use BEM methodology (partly).

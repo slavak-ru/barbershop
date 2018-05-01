@@ -1,0 +1,23 @@
+.feature__description {
+  padding: 0 38px;
+  
+  display: block;
+  
+  font-size: 20px;
+  line-height: 27px;
+
+  @media (min-width: $medium-devices) { 
+    flex-basis: 0;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 5px;
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $large-devices) { 
+    padding: 10px 43px;
+
+  }
+ 
+}

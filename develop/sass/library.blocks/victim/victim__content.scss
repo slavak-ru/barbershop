@@ -1,0 +1,26 @@
+.victim__content {
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+
+  @media (min-width: $medium-devices) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 44px;
+    padding-top: 40px;
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: $large-devices) {
+    padding-left: 13px;
+    padding-right: 24px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    
+
+    margin-bottom: 0;
+
+  }
+}

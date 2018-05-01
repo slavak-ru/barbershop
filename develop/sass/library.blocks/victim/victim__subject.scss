@@ -1,0 +1,44 @@
+.victim__subject {
+  display: block;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  padding-left: 22px;
+  padding-right: 12px;
+
+  font-size: 18px;
+
+  &_large {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $medium-devices) {
+    padding-left: 24px;
+    padding-right: 21px;
+    margin-bottom: 0;
+    flex-grow: 1;
+  }
+
+  &_large {
+    @media (min-width: $medium-devices) {
+      margin-bottom: 200px;
+      padding-right: 5px;
+      flex-grow: 0;
+    }
+  }
+
+
+  @media (min-width: $large-devices) {
+    min-height: 81px;
+    margin-bottom: 21px;
+    padding-left: 20px;
+    padding-right: 9px;
+    
+    &_large {  
+        padding-right: 88px;
+        margin-bottom: 161px;
+        flex-grow: 0;
+    }
+  }
+  
+}

@@ -1,0 +1,64 @@
+.supremacy_theme_white {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 33px 28px;
+  
+  color: #000000;
+  background-color: #ffffff;
+  box-sizing: border-box;
+
+  @media (min-width: $medium-devices) { 
+    margin-top: -185px;
+    padding-top: 31px;
+    padding-right: 0;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 0px;
+      height: 23px;
+      
+      position: absolute;
+      left: -20px;
+      top: 43px;
+
+      border-top: 23px solid #ffffff;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+
+    }
+  }
+
+  @media (min-width: $large-devices) { 
+      flex-direction: column;
+      min-width: 320px;
+      margin-top: 0;
+      padding: 30px 35px;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 0px;
+        height: 23px;
+        
+        position: absolute;
+        left: -24px;
+        top: 35px;
+  
+        border-top: 27px solid #ffffff;
+        border-left: 28px solid transparent;
+        border-right: 20px solid transparent;
+  
+      }
+  }
+
+}

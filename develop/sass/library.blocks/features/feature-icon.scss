@@ -1,0 +1,21 @@
+.feature-icon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 25px;
+
+  fill: #826550;
+
+  @media (min-width: $medium-devices) {
+    position: absolute;
+    top: 0;
+    left: 95px;
+  }
+
+  @media (min-width: $large-devices) {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}

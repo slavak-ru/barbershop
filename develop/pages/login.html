@@ -2,14 +2,23 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Barbershop - для настоящих мужчин!</title>
-	<link rel="preload" href="/fonts/ptsansnarrowbold.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="/fonts/ptsansnarrow.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/pt-sans-narrow-700.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/pt-sans-narrow-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    
 </head>
-<body class="page-body">
+<body class="page-body page-body__theme_bs">
         <div class="page-layout">
 
         <!-- header block -->
@@ -20,7 +29,7 @@
                     <label class="burger-menu__icon" for="checkbox_icon">
                         <span class="burger-menu__icon_line"></span>
                     </label>
-                    <nav class="page-head__nav">
+                    <nav class="page-head__nav" role="navigation">
                         <ul class="nav-menu nav-menu_main">
                             <li class="nav-menu__item ">
                                 <a class="link link_menu" href="/index.html">
@@ -50,7 +59,7 @@
                         </ul>
                         <ul class="nav-menu">
                             <li class="nav-menu__item nav-menu__item_login">
-                                <a class="link link_menu link_menu-login curent-page" href="/pages/login.html">
+                                <a class="link link_menu link_menu-login curent-page curent-page_login" href="/pages/login.html">
                                     <svg class="login__icon">
                                         <use xlink:href="/img/symbols.svg#signin"></use>
                                     </svg>
@@ -61,31 +70,32 @@
                     </nav>
                                 
                 </div>
-                <section class="page-head__head-banner logo-icon">
+                <section class="page-head__head-banner page-head__head-banner_inner logo-icon" role="banner">
                     <h1 class="h1 visibility-hidden">Barbershop - для настоящих мужчин!</h1>
                 </section>
             </header>
         <!-- end header block -->
-            <main class="page-content">    
+            <main class="page-content" role="main">    
 
 <!-- content block -->
-    <section class="login">
-        <h2 class="login__header">введите пожалуйста свой логин и пароль</h2>
-        <form class="form form_login" action="https://echo.htmlacademy.ru" method="post" role="form">
-            <span class="after">
-                <input class="login__input-text" type="text" name="username" placeholder="ЛОГИН" required autofocus>
+    <section class="section_appointment  section_login section_before">
+        <h2 class="section__title section__title_login">войдите в личный кабинет</h2>
+        <form class="form form_appointment form_login" action="https://echo.htmlacademy.ru" method="post" role="form">
+            <span class="form__input_icon form__input_icon_login form__input_icon_login_page">
+                <input class="form__input form__input_text form__input_text_appointment form__input_login" type="text" name="username" placeholder="Логин" required autofocus>
             </span>
-            <span class="after">
-                <input class="login__input-password" type="password" name="password" placeholder="ПАРОЛЬ" required>
+            <span class="form__input_icon form__input_icon_password form__input_icon_login_page">
+                <input class="form__input form__input_text form__input_text_appointment form__input_login" type="password" name="password" placeholder="Пароль" required>
             </span>
-            <div class="ligin__wrapper">
-                <label class="login__checkbox">
-                    <input type="checkbox" name="save">
-                    <span>запомните меня</span>
+            <div class="form__label_block_login">
+                <label class="label form__label form__label_checkbox">
+                    <input class="form__input form__input_checkbox" type="checkbox" name="save" hidden>
+                    <span class="form__label_text">Запомните меня</span>
                 </label>
-                <a class="link login__forgote" href="#">я забыл пароль!</a>
+                <a class="popup__link" href="#">Я забыл пароль!</a>
             </div>
-            <input class="button button_big" type="submit" name="submit" value="ВОЙТИ В ЛИЧНЫЙ КАБИНЕТ">
+                <input class="button button_login" type="submit" name="submit" value="ВОЙТИ">
+
         </form>
     </section>
 

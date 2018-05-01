@@ -1,0 +1,11 @@
+.page-content_inner {
+  background-color: $background-color;
+
+  @media (min-width: $medium-devices) {
+    background-color: $background-color;
+  }
+
+  @media (min-width: $large-devices) {
+    background-color: $background-color;
+  }
+}

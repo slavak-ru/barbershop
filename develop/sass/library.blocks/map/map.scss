@@ -1,0 +1,13 @@
+.map {
+  width: 100%;
+	height: 300px;
+	margin: 0;
+//	padding-bottom: 35px;
+//	margin-left: calc((960px - 100vw) / 2);
+	background-color: #f8f5f2;
+
+	
+	@media (min-width: $large-devices) {
+		height: 400px;
+	}
+}

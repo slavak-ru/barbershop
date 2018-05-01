@@ -1,0 +1,139 @@
+.toggle-block__radio_review {
+  border-color: #939290;
+
+  &_1:checked ~ 
+    .toggle-block
+    .toggle-block__label_review1 {
+      background-color: #353535;
+      border-color: #353535;
+  }
+  
+
+  &_2:checked ~ 
+    .toggle-block
+    .toggle-block__label_review2 {
+      background-color: #353535;
+      color: #353535;
+  }
+
+  &_3:checked ~ 
+    .toggle-block
+    .toggle-block__label_review3 {
+      background-color: #353535;
+      border-color: #353535;
+  }
+
+
+  &_1:checked ~ 
+    .reviews-block
+    .review_1 {
+      margin-left: 0px;
+
+      @media (min-width: $medium-devices) {
+         display: flex;
+      }
+  }
+  
+  &_1:checked ~ 
+    .reviews-block
+    .review_2 {
+
+      @media (min-width: $medium-devices) {
+         display: none;
+      }
+  }
+  
+  &_1:checked ~ 
+    .reviews-block
+    .review_3 {
+
+      @media (min-width: $medium-devices) {
+         display: none;
+      }
+  }
+
+
+  &_2:checked ~ 
+    .reviews-block
+    .review_1 {
+      margin-left: -302px;
+
+      @media (min-width: $medium-devices) {
+        display: none;
+      }
+  }
+
+  &_2:checked ~ 
+    .reviews-block
+    .review_2 {
+      margin-left: 0px;
+
+      @media (min-width: $medium-devices) {
+        display: flex;
+      }
+  }
+  
+  &_2:checked ~ 
+    .reviews-block
+    .review_3 {
+
+      @media (min-width: $medium-devices) {
+        display: none;
+      }
+  }
+
+  &_3:checked ~ 
+    .reviews-block
+    .review_1 {
+      margin-left: -604px;
+
+      @media (min-width: $medium-devices) {
+        display: none;
+      }
+  }
+  
+  &_3:checked ~ 
+    .reviews-block
+    .review_2 {
+
+      @media (min-width: $medium-devices) {
+        display: none;
+      }
+  }
+
+  &_3:checked ~ 
+    .reviews-block
+    .review_3 {
+      margin-left: 0px;
+
+      @media (min-width: $medium-devices) {
+        display: flex;
+      }
+  }
+
+  &_1:checked ~ 
+    .reviews-block
+    .button_review_left {
+      background-color: #aeaeae;
+      border-color: #aeaeae;
+      cursor: default;
+
+      &::after {
+        border-right-color: #ffffff;
+      }
+
+  }
+
+  &_3:checked ~ 
+    .reviews-block
+    .button_review_right {
+      background-color: #aeaeae;
+      border-color: #aeaeae;
+      cursor: default;
+
+      &::after {
+        border-left-color: #ffffff;
+      }
+
+  }
+}

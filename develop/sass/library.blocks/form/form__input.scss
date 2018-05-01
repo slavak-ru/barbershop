@@ -1,0 +1,26 @@
+.form__input {
+  display: inline-block;
+
+
+  margin: 0;
+
+  box-sizing: border-box;
+  outline: none;
+
+  &:hover {
+    border: 1px solid #d5c9bd;
+    font-size: 100%;
+  }
+
+  &:active {
+    border: 1px solid #999999;
+    font-size: 100%;
+  }
+
+  &:focus {
+    outline: 1px solid #999999;
+    font-size: 100%;
+  }
+  
+
+}

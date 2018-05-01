@@ -6,4 +6,32 @@
 
   color: #ffffff;
   text-decoration: none;
+
+//  box-sizing: border-box;
+  
+  &:focus {
+    outline: 1px solid #515151;
+
+    
+  }
+  
+  &:active {
+    outline: none;
+  }
+
+  &_menu {
+    @media (min-width: $medium-devices) {
+      &:focus {
+        outline: none;
+        
+      }
+    }
+    @media (min-width: $large-devices) {
+      &:focus {
+        outline: 1px solid #515151;
+        
+      }
+    }
+  }
 }
+

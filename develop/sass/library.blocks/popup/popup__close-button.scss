@@ -1,0 +1,59 @@
+.popup__close-button {
+  display: none;
+
+  @media (min-width: $medium-devices) { 
+    display: block;
+    position: absolute;
+    right: -50px;
+    top: 0px;
+
+    width: 53px;
+    height: 53px;
+
+    font-size: 100px;
+    color: #ffffff;
+
+
+    background-color: transparent;
+    border: transparent;
+    outline-color: transparent;
+
+    cursor: pointer;
+    transform: rotate(45deg);
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -1px;
+      left: 25px;
+
+      width: 3px;
+      height: 53px;
+      background-color: #ffffff;
+
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 25px;
+      left: -1px;
+
+      width: 53px;
+      height: 3px;
+      background-color: #ffffff;
+
+    }
+
+    &:hover {
+      &::after {
+        background-color: #808080;
+      }
+
+      &::before {
+        background-color: #808080;
+      }
+    }
+  }
+  
+}

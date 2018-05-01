@@ -9,9 +9,21 @@
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-//       width: 500px;
+
       flex-grow: 1;
-      margin-right: 50px;
+      margin-right: 41px;
+      
+    }
+
+    @media (min-width: $large-devices) { 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      flex-grow: 1;
+
+      max-width: 734px;
+      margin-left: 0;
       
     }
   }

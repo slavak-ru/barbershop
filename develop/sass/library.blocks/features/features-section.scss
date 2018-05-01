@@ -1,0 +1,66 @@
+.features-section {
+  width: $mini-devices;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 70px;
+  overflow: hidden;
+
+  position: relative;
+
+  background-color: #242424;
+  background-clip: content-box;
+  box-sizing: inherit;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+
+    position: absolute;
+    bottom: 30px;
+
+    border-top: 40px solid #242424;
+    border-right: 160px solid transparent;
+    border-left: 160px solid transparent;
+ 
+  }
+
+  @media (min-width: $medium-devices) {
+    width: 768px;
+    padding: 0;
+    padding-bottom: 0px;
+    margin: auto;
+
+    background-color: #353535;
+    overflow: visible;
+
+    z-index: 10;
+
+    &::after {
+      bottom: -40px;
+      left: -5px;
+      border-top: 40px solid #353535;
+      border-right: 390px solid transparent;
+      border-left: 390px solid transparent;
+    }
+  }
+
+  @media (min-width: $large-devices) {
+    width: $large-devices;
+    padding-top: 72px;
+    padding-left: 120px;
+    padding-bottom: 36px;
+    background-color: #353535;
+
+    &::after {
+      bottom: -40px;
+      left: -5px;
+      border-top: 65px solid #353535;
+      border-right: 600px solid transparent;
+      border-left: 600px solid transparent;
+    }
+
+  }
+
+
+}

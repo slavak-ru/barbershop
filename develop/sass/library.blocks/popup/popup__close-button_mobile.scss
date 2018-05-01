@@ -1,0 +1,17 @@
+.popup__close-button_mobile {
+  width: 130px;
+ 
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #f8f5f2;
+  border: 1px solid #e5ddd5;
+
+  &:focus {
+    outline: 1px solid #808080;
+  }
+
+  @media (min-width: $medium-devices) { 
+    display: none;  
+  }
+}

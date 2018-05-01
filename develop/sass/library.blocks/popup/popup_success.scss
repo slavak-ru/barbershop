@@ -1,0 +1,11 @@
+.popup_success {
+  width: $mini-devices;
+  padding: 60px 20px 50px 20px;
+
+  @media (min-width: $medium-devices) { 
+    width: 460px; 
+    left: calc(50% - 230px); 
+    top: 20vh;
+    padding: 60px 70px 50px 70px;
+  }
+}

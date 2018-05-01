@@ -1,0 +1,20 @@
+.price-table__cell {
+  display: block;
+  box-sizing: border-box;
+
+  @media (min-width: $medium-devices) {
+    padding-left: 20px;
+    line-height: 54px;
+
+    border-right: 1px solid #4a4a4a;
+
+    &:last-child {
+      border-right: none;
+    }
+    
+  }
+
+  @media (min-width: large-devices) {
+    padding-left: 18px;
+  }
+}

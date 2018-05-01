@@ -1,0 +1,28 @@
+.victim__block {
+  width: 280px;
+  margin: 0;
+  margin-bottom: 19px;
+  padding: 0;
+  padding-bottom: 12px;
+  
+    
+  border: 1px solid #e5ddd5;
+  box-sizing: border-box;
+
+  @media (min-width: $medium-devices) {
+    width: 640px;
+    display: flex;
+    flex-direction: row;
+    
+    margin-bottom: 40px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $large-devices) {
+    width: 295px;
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-spart;
+    
+  }
+}

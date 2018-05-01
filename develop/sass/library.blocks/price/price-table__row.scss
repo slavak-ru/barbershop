@@ -1,0 +1,26 @@
+.price-table__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  margin-bottom: 14px;
+
+  @media (min-width: $medium-devices) {
+    margin-bottom: 0;
+    flex-wrap: nowrap;
+    
+    border-bottom: 1px solid #4a4a4a;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+  }
+
+  @media (min-width: $large-devices) {
+    flex-wrap: nowrap;
+
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,11 @@
+.page-head__head-banner_inner {
+
+  @media (min-width: $medium-devices) {
+    height: 210px;
+  }
+
+  @media (min-width: $large-devices) {
+    height: 315px;
+  }
+
+}

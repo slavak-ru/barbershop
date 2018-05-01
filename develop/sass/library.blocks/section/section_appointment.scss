@@ -1,0 +1,16 @@
+.section_appointment {
+  padding-left: 20px;
+  padding-bottom: 35px;
+  box-sizing: inherit;
+
+  @media (min-width: $medium-devices) {
+    padding-left: 65px;
+    padding-top: 34px;
+    padding-bottom: 0;
+
+  }
+  @media (min-width: $large-devices) {
+    padding-left: 120px;
+  
+  }
+}

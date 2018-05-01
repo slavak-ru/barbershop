@@ -2,12 +2,21 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Barbershop - для настоящих мужчин!</title>
 	<link rel="preload" href="/fonts/pt-sans-narrow-700.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/fonts/pt-sans-narrow-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    
 </head>
 <body class="page-body page-body__theme_bs">
     <div class="page-layout">
@@ -20,7 +29,7 @@
                     <label class="burger-menu__icon" for="checkbox_icon">
                         <span class="burger-menu__icon_line"></span>
                     </label>
-                    <nav class="page-head__nav">
+                    <nav class="page-head__nav" role="navigation">
                         <ul class="nav-menu nav-menu_main">
                             <li class="nav-menu__item ">
                                 <a class="link link_menu curent-page" href="/index.html">
@@ -61,123 +70,219 @@
                     </nav>
                 
             </div>
-			<section class="page-head__head-banner logo-icon">
+			<section class="page-head__head-banner logo-icon" role="banner">
                 <h1 class="h1 visibility-hidden">Barbershop - для настоящих мужчин!</h1>
             </section>
         </header>
 <!-- end header block -->
-        <main class="page-content">
+        <main class="page-content" role="main">
 
 <!-- content block -->
-        <!-- features section -->
-        <section class="features">
-            <div class="feature feature_theme_white">
-                <h2 class="h2 feature__title">Стрижка у нас это выгодно!</h2>
-                <p class="feature__description">Мужская стрижка требует точного подхода. Обратимся к статистике</p>
-                <p class="feature__description feature__description_lies">* — приведённые данные ложь</p>
+    <!-- supremacy section -->
+        <section class="supremacy-section">
+            <div class="supremacy__block supremacy_theme_white">
+                <h2 class="h2 supremacy__title supremacy__title_header">
+                    Стрижка у нас это выгодно!
+                </h2>
+                <p class="supremacy__description supremacy__description_header">
+                    Мужская стрижка требует точного подхода. Обратимся к статистике:
+                </p>
+                <p class="supremacy__description supremacy__description_lies_top">
+                    * — приведённые данные ложь
+                </p>
             </div>
-            <div class="features__block">
-                <div class="feature feature_theme_black">
-					<p class="feature__title">1 500 *</p>
-					<p>рублей вложений</p>
+            
+            <div class="supremacy__block">
+                <div class="supremacy supremacy_theme_first-last">
+                    <p class="supremacy__title  supremacy__title_big supremacy__title_big_star">
+                        1 500
+                    </p>
+                    <p class="supremacy__description supremacy__description_small">
+                        рублей вложений
+                    </p>
 				</div>
-				<div class="feature feature_theme_grey">
-					<p class="feature__title">7 200</p>
-					<p class="feature__description">секунд времени мастера</p>
+				<div class="supremacy supremacy_theme_second">
+					<p class="supremacy__title  supremacy__title_big">
+                        7 200
+                    </p>
+					<p class="supremacy__description supremacy__description_small">
+                        секунд времени мастера
+                    </p>
                 </div>
-				<div class="feature feature_theme_black">
-					<p class="feature__title">90 000</p>
-					<p class="feature__description">постриженных волос</p>
+				<div class="supremacy supremacy_theme_third">
+					<p class="supremacy__title  supremacy__title_big">
+                        90 000
+                    </p>
+					<p class="supremacy__description supremacy__description_small">
+                        постриженных волос
+                    </p>
                 </div>
-				<div class="feature feature_theme_grey">
-					<p class="feature__title">500 000 *</p>
-					<p class="feature__description">лайков и комплиментов</p>
+				<div class="supremacy supremacy_theme_first-last">
+					<p class="supremacy__title  supremacy__title_big supremacy__title_big_star">
+                        500 000
+                    </p>
+					<p class="supremacy__description supremacy__description_small">
+                        лайков и комплиментов
+                    </p>
 				</div>
-                <p class="feature__description feature__description_lies">* — приведённые данные ложь</p>
+                <p class="supremacy__description supremacy__description_lies_bottom">
+                    * — приведённые данные ложь
+                </p>
             </div>
-
-            <div class="features__block">
-                    <input type="radio" name="feature" checked hidden>
-                    <input type="radio" name="feature" hidden>
-                    <input type="radio" name="feature" hidden>
-				<div class="feature feature_theme_black feature-icon feature-icon_first" id="feature1">
-						<p class="feature__title">БЫСТРО</p>
-						<p class="feature__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки</p>
-				</div>
-				<div class="feature feature_theme_black feature-icon feature-icon_second" id="feature2">
-						<p class="feature__title">КРУТО</p>
-						<p class="feature__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
-				</div>
-				<div class="feature feature_hide feature_theme_black feature-icon feature-icon_third" id="feature3">
-						<p class="feature__title">ДОРОГО</p>
-						<p class="feature__description">Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
-                </div>
-                <div class="toggle-radio-block">
-                        <label class="toggle-radio-block__radio" for="feature1"></label>
-                        <label class="toggle-radio-block__radio" for="feature2"></label>
-                        <label class="toggle-radio-block__radio" for="feature3"></label>
-                </div>
-			</div>
         </section>
-        <!-- end features section -->
+    <!-- end supremacy section -->
 
-        <!-- news section -->
+    <!-- features section -->
+        <section class="features-section">
+            <input class="toggle-block__radio toggle-block__radio_1" type="radio" name="feature" id="feature1" checked hidden>
+            <input class="toggle-block__radio toggle-block__radio_2" type="radio" name="feature" id="feature2" hidden>
+            <input class="toggle-block__radio toggle-block__radio_3" type="radio" name="feature" id="feature3" hidden>
+            <div class="features__block">
+                <div class="feature feature_line" id="feature1">
+                    <svg class="feature-icon feature-icon_advantage1">
+                        <use xlink:href="/img/symbols.svg#advantage-1-illustration">
+                        </use>
+                    </svg>
+					<p class="feature__title">БЫСТРО</p>
+					<p class="feature__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы испугаете даже мать Вашу.</p>
+				</div>
+				<div class="feature feature_line" id="feature2">
+                    <svg class="feature-icon feature-icon_advantage2">
+                        <use xlink:href="/img/symbols.svg#advantage-2-illustration">
+                        </use>
+                    </svg>                    
+					<p class="feature__title">КРУТО</p>
+					<p class="feature__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду фильмов ужасов. Во всяком случае внешне.</p>
+				</div>
+				<div class="feature feature_last" id="feature3">
+                    <svg class="feature-icon feature-icon_advantage3">
+                        <use xlink:href="/img/symbols.svg#advantage-3-illustration">
+                        </use>
+                    </svg> 
+					<p class="feature__title">ДОРОГО</p>
+					<p class="feature__description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+                </div>
+            </div>
+            <div class="toggle-block toggle-block_features">
+                <label class="toggle-block__label toggle-block__label_1" for="feature1"></label>
+                <label class="toggle-block__label toggle-block__label_2" for="feature2"></label>
+                <label class="toggle-block__label toggle-block__label_3" for="feature3"></label>
+            </div>    
+        </section>
+    <!-- end features section -->
+
+    <!-- news section -->
         <section class="news-section">
-            <h2 class="h2 news-section__title">Новости и акции</h2>
-			<div class="news">
-				<time class="news__date" datetime="2017-09-28">28 сентября</time>
-				<p class="">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
+            <input class="toggle__checkbox_news" type="checkbox" name="news" id="news_button" checked hidden>
+            <h2 class="h2 section__title section__title_news">
+                Новости и акции
+            </h2>
+			<div class="news news_last">
+				<time class="news__date" datetime="2017-09-28">28<span class="news__date_month">сент</span></time>
+				<p class="news__text">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
 			</div>
-            <div class="news">
-				<time class="news__date" datetime="2017-09-19">19 сентября</time>
-				<p class="">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
+            <div class="news news_last news_second">
+				<time class="news__date" datetime="2017-09-19">19<span class="news__date_month">сент</span></time>
+				<p class="news__text">В нашей команде пополнение, Борис «Бритва» Стригунец, <span class="news__text_hide">обладатель множества титулов и наград</span> пополнил наши стройные ряды. Спешите записаться!</p>
 			</div>
-            <div class="news">
-				<time class="news__date" datetime="2017-09-09">9 сентября</time>
-				<p class="">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
+            <div class="news news_old news_third">
+				<time class="news__date" datetime="2017-09-09">9<span class="news__date_month">сент</span></time>
+				<p class="news__text">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
             </div>
-            <div class="news">
-				<time class="news__date" datetime="2017-09-08">8 сентября</time>
-				<p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt earum saepe asperiores labore? Modi, expedita!</p>
+            <div class="news news_old">
+				<time class="news__date" datetime="2017-09-08">8<span class="news__date_month">сент</span></time>
+				<p class="news__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt earum saepe asperiores labore? Modi, expedita!</p>
             </div>
-            <div class="news">
-				<time class="news__date" datetime="2017-09-07">7 сентября</time>
-				<p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laudantium non iure dicta quibusdam cum itaque natus architecto. Modi, in.</p>
+            <div class="news news_old">
+				<time class="news__date" datetime="2017-09-07">7 <span class="news__date_month">сент</span></time>
+				<p class="news__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laudantium non iure dicta quibusdam cum itaque natus architecto. Modi, in.</p>
             </div>
-            <button class="button" type="button"><span>показать все</span></button>
+            <label class="button button_news" for="news_button"><span class="button_show">показать все</span><span class="button_hide">скрыть</span> </label>
+           <!-- <button class="button" type="button"><span>показать все</span></button> -->
         </section>
-        <!-- end news section -->
+    <!-- end news section -->
 
-        <!-- reviews section -->
-        <section class="reviews">
-            <h2 class="h2 reviews__title">Отзывы о нас</h2>
-            <a href=""><span>Оставить свой</span></a>
-            <input type="radio" name="reviews" checked hidden>
-            <input type="radio" name="reviews" hidden>
-            <input type="radio" name="reviews" hidden>
-            <div class="reviews__review reviews__review_1" id="review1">
-                <img src="/img/barker-desktop.jpg" alt="Трэвис Баркер - лысый хрен">
-                <h3 class="h3">Трэвис Баркер</h3>
-                <p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+    <!-- reviews section -->
+        <section class="section_reviews">
+            <h2 class="h2 section__title section__title_reviews">Отзывы о нас</h2>
+            <a class="button button_reviews" href=""><span>Оставить свой</span></a>
+            <input class="toggle-block__radio toggle-block__radio_review_1" type="radio" name="review" id="review1" checked>
+            <input class="toggle-block__radio toggle-block__radio_review_2" type="radio" name="review" id="review2">
+            <input class="toggle-block__radio toggle-block__radio_review_3" type="radio" name="review" id="review3">
+            <div class="reviews-block">
+                <button class="button_review button_review_left" type="button" name="review_left"></button>
+                <div class="review review_1" id="review1">
+                    <picture>
+                        <!-- десктоп -->
+                        <source 
+                            media="(min-width: 1200px)"
+                            srcset="/img/barker-desktop.jpg">
+                        <!-- планшет -->
+                        <source
+                            media="(min-width: 640px)"
+                            srcset="/img/barker-tablet.jpg">
+                        <img class="review__image" src="/img/barker-mobile.jpg" alt="Трэвис Баркер - лысый хрен" title="Трэвис Баркер - лысый хрен">
+                    </picture>
+                    <div class="review__content">
+                        <h3 class="h3 review__title">Трэвис Баркер</h3>
+                        <p class="review__text">
+                            Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+                        </p>
+                    </div>
+                </div>
+                <div class="review review_2" id="review2">
+                    <picture>
+                        <!-- десктоп -->
+                        <source 
+                            media="(min-width: 1200px)"
+                            srcset="/img/barker-desktop.jpg">
+                        <!-- планшет -->
+                        <source
+                            media="(min-width: 640px)"
+                            srcset="/img/barker-tablet.jpg">
+                        <img class="review__image" src="/img/barker-mobile.jpg" alt="Стивен Сигал - сигал, сигал" title="Стивен Сигал - сигал, сигал">
+                    </picture>
+                    <div class="review__content">
+                        <h3 class="h3 review__title">
+                            Стивен Сигал
+                        </h3>
+                        <p class="review__text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, consequatur ducimus. Saepe fugiat error voluptatum.
+                        </p>
+                    </div>
+                </div>
+                <div class="review review_3" id="review3">
+                    <picture>
+                        <!-- десктоп -->
+                        <source 
+                            media="(min-width: 1200px)"
+                            srcset="/img/barker-desktop.jpg">
+                        <!-- планшет -->
+                        <source
+                            media="(min-width: 640px)"
+                            srcset="/img/barker-tablet.jpg">
+                        <img class="review__image" src="/img/barker-mobile.jpg" alt="Джуд Лоу - после отсидки" title="Джуд Лоу - после отсидки">
+                    </picture>
+                    <div class="review__content">
+                        <h3 class="h3 review__title">
+                            Джуд Лоу
+                        </h3>
+                        <p class="review__text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, minima.
+                        </p>
+                    </div>
+                </div>
+                <button class="button_review button_review_right" type="button" name="review_right"></button>
             </div>
-            <div class="reviews__review reviews__review_2" id="review2">
-                <img src="/img/barker-desktop.jpg" alt="Еще один Трэвис Баркер">
-                <h3 class="h3">Трэвис Баркер</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, consequatur ducimus. Saepe fugiat error voluptatum.</p>
-            </div>
-            <div class="reviews__review reviews__review_2" id="review3">
-                <img src="/img/barker-desktop.jpg" alt="Двойник Трэвис Баркера">
-                <h3 class="h3">Трэвис Баркер</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, minima.</p>
-            </div>
-            <div class="toggle-radio-block">
-                <label class="toggle-radio-block__radio" for="review1"></label>
-                <label class="toggle-radio-block__radio" for="review2"></label>
-                <label class="toggle-radio-block__radio" for="review2"></label>
+            <div class="toggle-block toggle-block_review">
+                <label class="toggle-block__label toggle-block__label_review toggle-block__label_review1" for="review1"></label>
+                <label class="toggle-block__label toggle-block__label_review toggle-block__label_review2" for="review2"></label>
+                <label class="toggle-block__label toggle-block__label_review toggle-block__label_review3" for="review3"></label>
             </div>
         </section>
-        <!-- end reviewssection -->
+    <!-- end reviewssection -->
 <!-- end content block -->
+
         </main>
 <!-- start footer -->
         <footer class="footer footer__theme_bs" role="contentinfo">
@@ -192,7 +297,7 @@
                     <p class="footer-block__title footer-block__title_social">Давайте дружить!</p>
                     <ul class="footer-block__menu">
                         <li class="footer-block__menu_item" title="Вконтакте">
-                            <a class="footer-block__menu_link socials__icon_vk" href="#" target="_blank">
+                            <a class="link footer-block__menu_link socials__icon_vk" href="#" target="_blank">
                                 <svg class="footer-block__menu_icon footer__icon">
                                     <use xlink:href="/img/symbols.svg#vk-icon"></use>
                                 </svg>
@@ -200,7 +305,7 @@
                             </a>
                         </li>
                         <li class="footer-block__menu_item" title="Facebook" >
-                            <a class="footer-block__menu_link socials__icon_facebook" href="#" target="_blank">
+                            <a class="link footer-block__menu_link socials__icon_facebook" href="#" target="_blank">
                                 <svg class="footer-block__menu_icon">
                                     <use xlink:href="/img/symbols.svg#facebook-icon"></use>
                                 </svg>
@@ -208,7 +313,7 @@
                             </a>
                         </li>
                         <li class="footer-block__menu_item" title="Instagramm" >
-                            <a class="footer-block__menu_link socials__icon__insta" href="#" target="_blank">
+                            <a class=" link footer-block__menu_link socials__icon__insta" href="#" target="_blank">
                                 <svg class="footer-block__menu_icon">
                                     <use xlink:href="/img/symbols.svg#insta-icon"></use>
                                 </svg>
@@ -232,18 +337,27 @@
     <section class="popup__wrapper" aria-label="Форма входа в личный кабинет" hidden>
 		<div class="popup popup-login">
 			<h2 class="popup__title">личный кабинет</h2>
-			<p>введите пожалуйста свой логин и пароль</p>
-			<form class="form form_login" action="https://echo.htmlacademy.ru" method="post" role="form">
-				<span class="input__icon login-icon"><input type="text" name="username" placeholder="ЛОГИН" required autofocus></span>
-				<span class="input__icon passwod-icon"><input type="password" name="password" placeholder="ПАРОЛЬ" required></span>
-				<label class="label form__label">
-					<input class="form__input form__input_checkbox" type="checkbox" name="save">
-					<span class="input__text">запомните меня</span>
-				</label>
-				<a href="#">я забыл пароль!</a>
-				<input class="button button_big" type="submit" name="submit" value="ВОЙТИ В ЛИЧНЫЙ КАБИНЕТ">
+			<p class="popup__text">Введите свой логин и пароль, чтобы войти</p>
+			<form class="form form_popup-login" action="https://echo.htmlacademy.ru" method="post" role="form">
+				<span class="form__input_icon form__input_icon_login">
+                    <input class="form__input form__input_text form__input_text_popup" type="text" name="username" placeholder="Логин" required autofocus>
+                </span>
+				<span class="form__input_icon form__input_icon_password">
+                    <input class="form__input form__input_text form__input_text_popup" type="password" name="password" placeholder="Пароль" required>
+                </span>
+                <div class="popup__block_flex_row">
+                    <label class="label form__label form__label_checkbox">
+                        <input class="form__input form__input_checkbox" type="checkbox" name="save" hidden>
+                        <span class="form__label_text">Запомните меня</span>
+                    </label>
+                    <a class="popup__link" href="#">Я забыл пароль!</a>
+                </div>
+                <div class="popup__block_flex_row popup__block_flex_row_marginbottom">
+                    <input class="button button_popup" type="submit" name="submit" value="ВОЙТИ">
+                    <button class="popup__close-button_mobile" type="button">Закрыть</button>
+                </div>
 			</form>
-			<button class="close-button" type="button">+</button>
+			<button class="popup__close-button" type="button"></button>
 		</div>
     </section>
 <!-- end login popup -->

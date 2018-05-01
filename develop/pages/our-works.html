@@ -2,14 +2,23 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Barbershop: Наши работы</title>
-    <link rel="preload" href="/fonts/ptsansnarrowbold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/ptsansnarrow.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/pt-sans-narrow-700.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/pt-sans-narrow-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    
 </head>
-<body class="page-body">
+<body class="page-body page-body__theme_bs">
     <div class="page-layout">
 
     <!-- header block -->
@@ -20,7 +29,7 @@
                 <label class="burger-menu__icon" for="checkbox_icon">
                     <span class="burger-menu__icon_line"></span>
                 </label>
-                <nav class="page-head__nav">
+                <nav class="page-head__nav" role="navigation">
                     <ul class="nav-menu nav-menu_main">
                         <li class="nav-menu__item ">
                             <a class="link link_menu" href="/index.html">
@@ -61,157 +70,193 @@
                 </nav>
                                 
             </div>
-            <section class="page-head__head-banner logo-icon">
+            <section class="page-head__head-banner page-head__head-banner_inner logo-icon" role="banner">
                 <h1 class="h1 visibility-hidden">Barbershop - для настоящих мужчин!</h1>
                     </section>
         </header>
     <!-- end header block -->
-            <main class="page-content">
+        <main class="page-content page-content_inner" role="main">
 
     <!-- content block -->
-        <h2 class="h2 our-work__title">Наши работы</h2>
-        <a class="bread-crumbs" href="/index.html"><span class="bread-crumbs__text">на главную</span></a>
-        <section class="work">
-            <span class="work__best">Работа месяца</span>
-            <picture class="work__picture">
-                <!-- десктоп -->
-                <source 
-                    media="(min-width: 960px)"
-                    srcset="/img/photo-1-desktop.jpg">
-                <!-- планшет -->
-                <source
-                    media="(min-width: 640px)"
-                    srcset="/img/photo-1-tablet.jpg">
-                <img src="/img/photo-1-mobile.jpg" alt="Потерпевший Лжепётр Мчиславский" title="Потерпевший Лжепётр Мчиславский">
-            </picture>
-            
-            <div class="victim__content">
-                <h3 class=" h3 victim__name">Лжепётр Мчиславский</h3>
-                <p class="victim__subject">Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
-                <svg class="victim__icon scissors-icon">
-                    <use xlink:href="/img/symbols.svg#scissors-icon"></use>
-                    <span class="victim__icon_text">Стрижка</span>
-                </svg>
-                <svg class="victim__icon beard-icon">
-                    <use xlink:href="/img/symbols.svg#beard-icon"></use>
-                    <span class="victim__icon_text">Бритье</span>
-                </svg>
-                <svg class="victim__icon mustache-icon">
-                    <use xlink:href="/img/symbols.svg#mustache-icon"></use>
-                    <span class="victim__icon_text">Усы</span>
-                </svg>
+        <section class="section_appointment section_work section_before">
+            <h2 class="h2 section__title section__title_our-work">Наши работы</h2>
+            <a class="button bread-crumbs bread-crumbs_our-works" href="/index.html"><span class="bread-crumbs__text">на главную</span></a>
+            <div class="victim__block victim__block_large">
+                <picture class="victim__picture victim__picture_best-work" data-text="работа месяца" >
+                    <!-- десктоп -->
+                    <source 
+                        media="(min-width: 1200px)"
+                        srcset="/img/photo-1-desktop.jpg">
+                    <!-- планшет -->
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="/img/photo-1-tablet.jpg">
+                    <img src="/img/photo-1-mobile.jpg" alt="Потерпевший Лжепётр Мчиславский" title="Потерпевший Лжепётр Мчиславский">
+                </picture>
+                
+                <div class="victim__content victim__content_large">
+                    <h3 class=" h3 victim__name victim__name_large">Лжепётр Мчиславский</h3>
+                    <p class="victim__subject victim__subject_large">
+                        Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!
+                    </p>
+                    <div class="victim-icons__block">
+                        <div class="victim__icon">
+                            <svg class="victim__icon_scissors">
+                                <use xlink:href="/img/symbols.svg#scissors-icon"></use>
+                            </svg>
+                            <span class="victim__icon_text">Стрижка</span>
+                        </div>
+                        <div class="victim__icon">
+                            <svg class="victim__icon_beard">
+                                <use xlink:href="/img/symbols.svg#beard-icon"></use>
+                            </svg>
+                            <span class="victim__icon_text">Бритье</span>
+                        </div>
+                        <div class="victim__icon">
+                            <svg class="victim__icon_mustache">
+                                <use xlink:href="/img/symbols.svg#mustache-icon"></use>
+                            </svg>
+                            <span class="victim__icon_text">Усы</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- <div class="victim__blocks"> -->
+                <div class="victim__block">
+                    <picture class="victim__picture">
+                        <!-- десктоп -->
+                        <source 
+                            media="(min-width: 1200px)"
+                            srcset="/img/photo-2-desktop.jpg">
+                        <!-- планшет -->
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="/img/photo-2-tablet.jpg">
+                        <img src="/img/photo-2-mobile.jpg" alt="Потерпевший Саша Мальцев" title="Потерпевший Саша Мальцев">
+                    </picture>
+                    
+                    <div class="victim__content">
+                        <h3 class=" h3 victim__name">Саша Мальцев</h3>
+                        <p class="victim__subject">
+                            Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?
+                        </p>
+                        <div class="victim-icons__block">
+                            <div class="victim__icon">
+                                <svg class="victim__icon_scissors">
+                                    <use xlink:href="/img/symbols.svg#scissors-icon"></use>
+                                </svg>
+                                <span class="victim__icon_text">Стрижка</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="victim__block">
+                    <picture class="victim__picture">
+                        <!-- десктоп -->
+                        <source 
+                            media="(min-width: 1200px)"
+                            srcset="/img/photo-3-desktop.jpg">
+                        <!-- планшет -->
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="/img/photo-3-tablet.jpg">
+                        <img src="/img/photo-3-mobile.jpg" alt="Потерпевший Владимир Иваныч" title="Потерпевший Владимир Иваныч">
+                    </picture>
+                        
+                    <div class="victim__content">
+                        <h3 class=" h3 victim__name">Владимир Иваныч</h3>
+                        <p class="victim__subject">
+                            К зимнему сезону — готов!
+                        </p>
+                        <div class="victim-icons__block">
+                            <div class="victim__icon">
+                                <svg class="victim__icon_beard">
+                                    <use xlink:href="/img/symbols.svg#beard-icon"></use>
+                                </svg>
+                                <span class="victim__icon_text">Борода</span>
+                            </div>
+                            <div class="victim__icon">
+                                <svg class="victim__icon_mustache">
+                                    <use xlink:href="/img/symbols.svg#mustache-icon"></use>
+                                </svg>
+                                <span class="victim__icon_text">Усы</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="victim__block">
+                    <picture class="victim__picture">
+                        <!-- десктоп -->
+                        <source 
+                            media="(min-width: 1200px)"
+                            srcset="/img/photo-4-desktop.jpg">
+                        <!-- планшет -->
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="/img/photo-4-tablet.jpg">
+                        <img src="/img/photo-4-mobile.jpg" alt="Потерпевший Винстон Синий" title="Потерпевший Винстон Синий">
+                    </picture>
+                        
+                    <div class="victim__content">
+                        <h3 class=" h3 victim__name">Винстон Синий</h3>
+                        <p class="victim__subject">
+                            Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!
+                        </p>
+                        <div class="victim-icons__block">
+                            <div class="victim__icon">
+                                <svg class="victim__icon_scissors">
+                                    <use xlink:href="/img/symbols.svg#scissors-icon"></use>
+                                </svg>
+                                <span class="victim__icon_text">Стрижка</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
         </section>
 
-        <section class="work">
-            <picture class="work__picture">
-                <!-- десктоп -->
-                <source 
-                    media="(min-width: 960px)"
-                    srcset="/img/photo-2-desktop.jpg">
-                <!-- планшет -->
-                <source
-                    media="(min-width: 640px)"
-                    srcset="/img/photo-2-tablet.jpg">
-                <img src="/img/photo-2-mobile.jpg" alt="Потерпевший Саша Мальцев" title="Потерпевший Саша Мальцев">
-            </picture>
-            
-            <div class="victim__content">
-                <h3 class="h3 victim__name">Саша Мальцев</h3>
-                <p class="victim__subject">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
-                <svg class="victim__icon scissors-icon">
-                    <use xlink:href="/img/symbols.svg#scissors-icon"></use>
-                    <span class="victim__icon_text">Стрижка</span>
-                </svg>
-            </div>
-        </section>
-
-        <section class="work">
-            <picture class="work__picture">
-                <!-- десктоп -->
-                <source 
-                    media="(min-width: 960px)"
-                    srcset="/img/photo-3-desktop.jpg">
-                <!-- планшет -->
-                <source
-                    media="(min-width: 640px)"
-                    srcset="/img/photo-3-tablet.jpg">
-                <img src="/img/photo-3-mobile.jpg" alt="Потерпевший Владимир Иваныч" title="Потерпевший Владимир Иваныч">
-            </picture>
-
-            <div class="victim__content">
-                <h3 class="h3 victim__name">Владимир Иваныч</h3>
-                <p class="victim__subject">К зимнему сезону — готов!</p>
-                <svg class="victim__icon beard-icon">
-                        <use xlink:href="/img/symbols.svg#beard-icon"></use>
-                        <span class="victim__icon_text">Борода</span>
-                </svg>
-                <svg class="victim__icon mustache-icon">
-                    <use xlink:href="/img/symbols.svg#mustache-icon"></use>
-                    <span class="victim__icon_text">Усы</span>
-                </svg>
-            </div>
-        </section>
-       
-        <section class="work">
-            <picture class="work__picture">
-                <!-- десктоп -->
-                <source 
-                    media="(min-width: 960px)"
-                    srcset="/img/photo-4-desktop.jpg">
-                <!-- планшет -->
-                <source
-                    media="(min-width: 640px)"
-                    srcset="/img/photo-4-tablet.jpg">
-                <img src="/img/photo-4-mobile.jpg" alt="Потерпевший Винстон Синий" title="Потерпевший Винстон Синий">
-            </picture>
-            
-            <div class="victim__content">
-                <h3 class="h3 victim__name">Винстон Синий</h3>
-                <p class="victim__subject">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
-                <svg class="victim__icon scissors-icon">
-                    <use xlink:href="/img/symbols.svg#scissors-icon"></use>
-                    <span class="victim__icon_text">Стрижка</span>
-                </svg>
-            </div>
-        </section>
-    
         <!-- price-block -->
-        <section class="prices__section">
-            <h2 class="h2 prices__title">ПРЕЙСКУРАНТ</h2>
+        <section class="section_prices">
+            <h2 class="h2 section__title section__title_prices">ПРЕЙСКУРАНТ</h2>
             <div class="price-table">
                 <div class="price-table__row">
-                    <div class="price-table__number">1</div>
-                    <div class="price-table__type">Классическая стрижка</div>
-                    <div class="price-table__species">с мытьём головы</div>
-                    <div class="price-table__price">1 500 руб. </div>
+                    <div class="price-table__cell price-table__number">1</div>
+                    <div class="price-table__cell price-table__type">Классическая стрижка</div>
+                    <div class="price-table__cell price-table__species">с мытьём головы</div>
+                    <div class="price-table__cell price-table__price">1 500 руб.</div>
                 </div>
                 <div class="price-table__row">
-                    <div class="price-table__number">2</div>
-                    <div class="price-table__type">Современный вариант</div>
-                    <div class="price-table__species">с мытьём головы</div>
-                    <div class="price-table__price">1 500 руб. </div>
+                    <div class="price-table__cell price-table__number">2</div>
+                    <div class="price-table__cell price-table__type">Современный вариант</div>
+                    <div class="price-table__cell price-table__species">с мытьём головы</div>
+                    <div class="price-table__cell price-table__price">1 500 руб. </div>
                 </div>
                 <div class="price-table__row">
-                    <div class="price-table__number">3</div>
-                    <div class="price-table__type">Индивидуальный подход</div>
-                    <div class="price-table__species">с мытьём головы</div>
-                    <div class="price-table__price">2 000 руб. </div>
+                    <div class="price-table__cell price-table__number">3</div>
+                    <div class="price-table__cell price-table__type">Индивидуальный подход</div>
+                    <div class="price-table__cell price-table__species">с мытьём головы</div>
+                    <div class="price-table__cell price-table__price">2 000 руб. </div>
                 </div>
                 <div class="price-table__row">
-                    <div class="price-table__number">4</div>
-                    <div class="price-table__type">Бритьё бороды</div>
-                    <div class="price-table__species">без мытья</div>
-                    <div class="price-table__price">500 руб. </div>
+                    <div class="price-table__cell price-table__number">4</div>
+                    <div class="price-table__cell price-table__type">Бритьё бороды</div>
+                    <div class="price-table__cell price-table__species">без мытья</div>
+                    <div class="price-table__cell price-table__price">500 руб. </div>
                 </div>
                 <div class="price-table__row">
-                    <div class="price-table__number">5</div>
-                    <div class="price-table__type">Бритьё головы</div>
-                    <div class="price-table__species">с мытьём головы</div>
-                    <div class="price-table__price">1 000 руб. </div>
+                    <div class="price-table__cell price-table__number">5</div>
+                    <div class="price-table__cell price-table__type">Бритьё головы</div>
+                    <div class="price-table__cell price-table__species">с мытьём головы</div>
+                    <div class="price-table__cell price-table__price">1 000 руб. </div>
                 </div>
             </div>
             <div class="work-time">
+                <svg class="work-time__icon">
+                    <use xlink:href="/img/symbols.svg#clock-desktop">
+                    </use>
+                </svg> 
                 <span class="work-time__text clock-desktop">C 10:00 до 14:00 скидка 20%</span>
             </div>
         </section>
@@ -219,7 +264,7 @@
     
     <!-- end content block -->
 
-</main>
+        </main>
 <!-- start footer -->
         <footer class="footer footer__theme_bs" role="contentinfo">
             <div class="footer-content">
@@ -233,7 +278,7 @@
                     <p class="footer-block__title footer-block__title_social">Давайте дружить!</p>
                     <ul class="footer-block__menu">
                         <li class="footer-block__menu_item" title="Вконтакте">
-                            <a class="footer-block__menu_link socials__icon_vk" href="#" target="_blank">
+                            <a class="link footer-block__menu_link socials__icon_vk" href="#" target="_blank">
                                 <svg class="footer-block__menu_icon footer__icon">
                                     <use xlink:href="/img/symbols.svg#vk-icon"></use>
                                 </svg>
@@ -241,7 +286,7 @@
                             </a>
                         </li>
                         <li class="footer-block__menu_item" title="Facebook" >
-                            <a class="footer-block__menu_link socials__icon_facebook" href="#" target="_blank">
+                            <a class="link footer-block__menu_link socials__icon_facebook" href="#" target="_blank">
                                 <svg class="footer-block__menu_icon">
                                     <use xlink:href="/img/symbols.svg#facebook-icon"></use>
                                 </svg>
@@ -249,7 +294,7 @@
                             </a>
                         </li>
                         <li class="footer-block__menu_item" title="Instagramm" >
-                            <a class="footer-block__menu_link socials__icon__insta" href="#" target="_blank">
+                            <a class=" link footer-block__menu_link socials__icon__insta" href="#" target="_blank">
                                 <svg class="footer-block__menu_icon">
                                     <use xlink:href="/img/symbols.svg#insta-icon"></use>
                                 </svg>
@@ -267,23 +312,33 @@
 <!-- end footer -->
     
     </div>
+    
 
 <!-- login popup -->
     <section class="popup__wrapper" aria-label="Форма входа в личный кабинет" hidden>
         <div class="popup popup-login">
             <h2 class="popup__title">личный кабинет</h2>
-            <p>введите пожалуйста свой логин и пароль</p>
-            <form class="form form_login" action="https://echo.htmlacademy.ru" method="post" role="form">
-                <span class="input__icon login-icon"><input type="text" name="username" placeholder="ЛОГИН" required autofocus></span>
-                <span class="input__icon passwod-icon"><input type="password" name="password" placeholder="ПАРОЛЬ" required></span>
-                <label class="label form__label">
-                    <input class="form__input form__input_checkbox" type="checkbox" name="save">
-                    <span class="input__text">запомните меня</span>
-                </label>
-                <a href="#">я забыл пароль!</a>
-                <input class="button button_big" type="submit" name="submit" value="ВОЙТИ В ЛИЧНЫЙ КАБИНЕТ">
+            <p class="popup__text">Введите свой логин и пароль, чтобы войти</p>
+            <form class="form form_popup-login" action="https://echo.htmlacademy.ru" method="post" role="form">
+                <span class="form__input_icon form__input_icon_login">
+                    <input class="form__input form__input_text form__input_text_popup" type="text" name="username" placeholder="Логин" required autofocus>
+                </span>
+                <span class="form__input_icon form__input_icon_password">
+                    <input class="form__input form__input_text form__input_text_popup" type="password" name="password" placeholder="Пароль" required>
+                </span>
+                <div class="popup__block_flex_row">
+                    <label class="label form__label form__label_checkbox">
+                        <input class="form__input form__input_checkbox" type="checkbox" name="save" hidden>
+                        <span class="form__label_text">Запомните меня</span>
+                    </label>
+                    <a class="popup__link" href="#">Я забыл пароль!</a>
+                </div>
+                <div class="popup__block_flex_row popup__block_flex_row_marginbottom">
+                    <input class="button button_popup" type="submit" name="submit" value="ВОЙТИ">
+                    <button class="popup__close-button_mobile" type="button">Закрыть</button>
+                </div>
             </form>
-            <button class="close-button" type="button">+</button>
+            <button class="popup__close-button" type="button"></button>
         </div>
     </section>
 <!-- end login popup -->

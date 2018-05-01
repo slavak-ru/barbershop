@@ -11,8 +11,8 @@
   }
 
   @media (min-width: $medium-devices) { 
-    left: 30px;
-    top: 20px;
+    top: 33px;
+    left: 4px;
     
     &:hover {
       fill: #67503f;
@@ -25,7 +25,7 @@
 
   @media (min-width: $large-devices) { 
     left: 10px;
-    top: 20px;
+    top: 34px;
 
     &:hover {
       fill: #000000;

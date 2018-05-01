@@ -1,0 +1,13 @@
+.price-table__type {
+  font-weight: bold;
+  order: 1;
+
+  @media (min-width: $medium-devices) {
+    width: 250px;
+    padding-left: 20px;
+  }
+  @media (min-width: $large-devices) {
+    width: 255px;
+    padding-left: 20px;
+  }
+}

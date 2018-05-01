@@ -1,15 +1,18 @@
 .page-content {
-  margin: auto;
+  margin: 0 auto;
   width: $mini-devices;
+
+  box-sizing: inherit;
+  background-color: $background-color;
 
   @media (min-width: $medium-devices) { 
     width: $medium-devices;  
+    background-color: #353535;
   }
 
   @media (min-width: $large-devices) { 
     width: $large-devices;  
+    background-color: #353535;
   }
-
-  background-color: $background-color;
-
+  
 }

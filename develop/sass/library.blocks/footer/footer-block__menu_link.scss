@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
 
-
+  
   border: 1px solid #3e3e3e;
   box-sizing: border-box;
 
@@ -21,10 +21,11 @@
   &:active {
     background-color: #252525;
     border: 1px solid #252525;
+    outline: none;
   }
 
   @media (min-width: $medium-devices) {
-    width: $medium-devices / 3;
+    width: 215px;
     height: 100px;
     margin-left: 0px;
 

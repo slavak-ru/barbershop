@@ -2,12 +2,21 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Barbershop: как нас найти</title>
-	<link rel="preload" href="/fonts/ptsansnarrowbold.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="/fonts/ptsansnarrow.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/pt-sans-narrow-700.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/pt-sans-narrow-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    
 </head>
 <body class="page-body">
     <div class="page-layout">
@@ -20,7 +29,7 @@
                 <label class="burger-menu__icon" for="checkbox_icon">
                     <span class="burger-menu__icon_line"></span>
                 </label>
-                <nav class="page-head__nav">
+                <nav class="page-head__nav" role="navigation">
                     <ul class="nav-menu nav-menu_main">
                         <li class="nav-menu__item ">
                             <a class="link link_menu" href="/index.html">
@@ -61,36 +70,34 @@
                 </nav>
                 
             </div>
-			<section class="page-head__head-banner logo-icon">
+			<section class="page-head__head-banner page-head__head-banner_inner logo-icon" role="banner">
                 <h1 class="h1 visibility-hidden">Barbershop - для настоящих мужчин!</h1>
             </section>
         </header>
 <!-- end header block -->
-        <main class="page-content">
+        <main class="page-content" role="main">
 
     <!-- start content block -->
-        <section class="contacts-section" aria-label="Наша контактная информация">
-            <h2 class="contacts-section__header ">контактная информация</h2>
-            <address class="contacts-section__address contacts-section__address_inline">
-                <p>
-                    барбершоп <q>бородинский</q><br>
-                    адрес: г. москва, г. троицк, троицкий бульвар, д.5<br>
-                    телефон: +7 (495) 111-11-11
-                </p>
+        <section class="section_contact section_before" >
+            <h2 class="section__title section__title_login">как нас найти</h2>
+            <address class="section__paragraph">
+                    Барбершоп <q>Бородинский</q><br>
+                    Адрес: г. Москва, г. Троицк, Троицкий бульвар, д.5<br>
+                    Телефон: +7 (495) 111-11-11
             </address>
-            <div class="contacts-section__work-time contacts-section__address_inline">
-                <p>время работы:<br>
-                    пн - пт: с 10:00 до 22:00<br>
-                    сб - вс: с 10:00 до 19:00
-                </p>
-            </div>
+            <p class="section__paragraph">
+                Время работы:<br>
+                пн - пт: с 10:00 до 22:00<br>
+                сб - вс: с 10:00 до 19:00
+            </p>
         </section>
-
         <div class="map-overlay" onClick="style.pointerEvents='none'"></div>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBew5DgsdD" width="800" height="500" frameborder="0"></iframe>
+        <section class="section_map">
+            <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A79f4fba9cffb836249a464d588a48c95505d18f5f656c475d38abdecc916d4a5&amp;source=constructor" width="708" height="438" scrolling="no" frameborder="0"></iframe>
+        </section>
     <!-- end content block -->
 
-</main>
+        </main>
 <!-- start footer -->
         <footer class="footer footer__theme_bs" role="contentinfo">
             <div class="footer-content">
@@ -104,7 +111,7 @@
                     <p class="footer-block__title footer-block__title_social">Давайте дружить!</p>
                     <ul class="footer-block__menu">
                         <li class="footer-block__menu_item" title="Вконтакте">
-                            <a class="footer-block__menu_link socials__icon_vk" href="#" target="_blank">
+                            <a class="link footer-block__menu_link socials__icon_vk" href="#" target="_blank">
                                 <svg class="footer-block__menu_icon footer__icon">
                                     <use xlink:href="/img/symbols.svg#vk-icon"></use>
                                 </svg>
@@ -112,7 +119,7 @@
                             </a>
                         </li>
                         <li class="footer-block__menu_item" title="Facebook" >
-                            <a class="footer-block__menu_link socials__icon_facebook" href="#" target="_blank">
+                            <a class="link footer-block__menu_link socials__icon_facebook" href="#" target="_blank">
                                 <svg class="footer-block__menu_icon">
                                     <use xlink:href="/img/symbols.svg#facebook-icon"></use>
                                 </svg>
@@ -120,7 +127,7 @@
                             </a>
                         </li>
                         <li class="footer-block__menu_item" title="Instagramm" >
-                            <a class="footer-block__menu_link socials__icon__insta" href="#" target="_blank">
+                            <a class=" link footer-block__menu_link socials__icon__insta" href="#" target="_blank">
                                 <svg class="footer-block__menu_icon">
                                     <use xlink:href="/img/symbols.svg#insta-icon"></use>
                                 </svg>
@@ -138,25 +145,36 @@
 <!-- end footer -->
     
     </div>
+    
 
 <!-- login popup -->
     <section class="popup__wrapper" aria-label="Форма входа в личный кабинет" hidden>
-		<div class="popup popup-login">
-			<h2 class="popup__title">личный кабинет</h2>
-			<p>введите пожалуйста свой логин и пароль</p>
-			<form class="form form_login" action="https://echo.htmlacademy.ru" method="post" role="form">
-				<span class="input__icon login-icon"><input type="text" name="username" placeholder="ЛОГИН" required autofocus></span>
-				<span class="input__icon passwod-icon"><input type="password" name="password" placeholder="ПАРОЛЬ" required></span>
-				<label class="label form__label">
-					<input class="form__input form__input_checkbox" type="checkbox" name="save">
-					<span class="input__text">запомните меня</span>
-				</label>
-				<a href="#">я забыл пароль!</a>
-				<input class="button button_big" type="submit" name="submit" value="ВОЙТИ В ЛИЧНЫЙ КАБИНЕТ">
-			</form>
-			<button class="close-button" type="button">+</button>
-		</div>
+        <div class="popup popup-login">
+            <h2 class="popup__title">личный кабинет</h2>
+            <p class="popup__text">Введите свой логин и пароль, чтобы войти</p>
+            <form class="form form_popup-login" action="https://echo.htmlacademy.ru" method="post" role="form">
+                <span class="form__input_icon form__input_icon_login">
+                    <input class="form__input form__input_text form__input_text_popup" type="text" name="username" placeholder="Логин" required autofocus>
+                </span>
+                <span class="form__input_icon form__input_icon_password">
+                    <input class="form__input form__input_text form__input_text_popup" type="password" name="password" placeholder="Пароль" required>
+                </span>
+                <div class="popup__block_flex_row">
+                    <label class="label form__label form__label_checkbox">
+                        <input class="form__input form__input_checkbox" type="checkbox" name="save" hidden>
+                        <span class="form__label_text">Запомните меня</span>
+                    </label>
+                    <a class="popup__link" href="#">Я забыл пароль!</a>
+                </div>
+                <div class="popup__block_flex_row popup__block_flex_row_marginbottom">
+                    <input class="button button_popup" type="submit" name="submit" value="ВОЙТИ">
+                    <button class="popup__close-button_mobile" type="button">Закрыть</button>
+                </div>
+            </form>
+            <button class="popup__close-button" type="button"></button>
+        </div>
     </section>
 <!-- end login popup -->
+
 </body>
 </html>

@@ -1,0 +1,16 @@
+.toggle-block__label {
+  width: 8px;
+  height: 8px;
+  display: block;
+
+  border: 2px solid #959595;
+
+  transform: rotate(45deg);
+
+  cursor: pointer;
+
+  @media (min-width: $medium-devices) {
+    display: none;
+  }
+}
+

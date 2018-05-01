@@ -1,0 +1,30 @@
+.form-section__title {
+  margin: auto;
+  margin-bottom: 37px;
+  padding-left: 34px;
+
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+
+  font-weight: normal;
+
+  @media (min-width: $medium-devices) {
+    font-size: 30px;
+    padding: 0;
+    margin-bottom: 47px;
+    text-align: center;
+
+    &_services {
+      margin-bottom: 70px;
+    }
+  }
+
+  @media (min-width: $large-devices) {
+    margin-bottom: 53px;
+
+    &_services {
+      margin-bottom: 70px;
+    }
+  }
+}

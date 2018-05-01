@@ -1,0 +1,9 @@
+.victim__blocks {
+
+  @media (min-width: $large-devices) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+}

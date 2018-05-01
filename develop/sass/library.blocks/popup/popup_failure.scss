@@ -1,0 +1,10 @@
+.popup_failure {
+  width: $mini-devices;
+  padding: 60px 70px 50px 70px;
+
+  @media (min-width: $medium-devices) { 
+    width: $mini-devices; 
+    left: calc(50% - 170px); 
+    top: 20vh;
+  }
+}

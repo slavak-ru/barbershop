@@ -4,6 +4,17 @@
 
   line-height: 50px;
   list-style: none;
+
+  @media (min-width: $medium-devices) { 
+//    margin-right: 37px;
+//    padding-top: 5px;
+  }
+
+  @media (min-width: $large-devices) { 
+    margin-right: 37px;
+
+    
+  }
 }
 
 
@@ -18,5 +29,6 @@
 
     @media (min-width: $medium-devices) { 
       border: none;
+//      margin-right: 37px;
     }
 }

@@ -1,0 +1,28 @@
+.button_review_left {
+  @media (min-width: $medium-devices) {
+    position: relative;
+    
+    border-right: 1px solid #e5ddd5;
+
+    &:focus {
+      outline: 1px solid #d5c9bd;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+ 
+      position: absolute;
+      top: 71px;
+      left: 18px;
+
+      border-right: 12px solid #000000;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+    }
+
+  
+  }
+
+ 
+}

@@ -1,0 +1,19 @@
+.supremacy__description_header {
+  margin: 0px;
+  margin-top: 15px;
+  padding: 0px 7px;
+
+
+  @media (min-width: $medium-devices) { 
+    max-width: 220px;
+    margin-top: 3px;
+    margin-left: 100px;
+  }
+
+  @media (min-width: $large-devices) { 
+    margin-left: 0px;
+    margin-top: 45px;
+    padding-left: 10px;
+
+  }
+}

@@ -1,0 +1,11 @@
+.form__input_text_popup {
+  width: 280px;
+  height: 70px;
+  margin-bottom: 7px;
+  padding: 17px 20px 17px 20px; 
+  
+  @media (min-width: $medium-devices) { 
+		width: 320px;
+  }
+
+}

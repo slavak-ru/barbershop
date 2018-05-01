@@ -1,0 +1,40 @@
+.price-table__species {
+  padding-left: 4px;
+  padding-right: 32px;
+
+  position: relative;
+  order: 3;
+
+  &::before {
+    display: block;
+    content: "(";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff; 
+  }
+
+  &::after {
+    display: block;
+    content: ")";
+    position: absolute;
+    top: 0;
+    right: 28px;
+    color: #ffffff; 
+  }
+
+  @media (min-width: $medium-devices) {
+    order: 2;
+    width: 160px;
+    padding-right: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $large-devices) {
+
+  }
+}

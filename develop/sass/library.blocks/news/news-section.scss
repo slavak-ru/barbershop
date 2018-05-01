@@ -1,0 +1,37 @@
+.news-section {
+  background-color: #f8f5f2;
+  padding: 0;
+  padding-top: 5px;
+  padding-right: 17px;
+  padding-left: 22px;
+
+
+  font-size: 0;
+  box-sizing: border-box;
+
+
+  @media (min-width: $medium-devices) {
+    margin-top: -25px;
+    padding-top: 117px;
+    padding-left: 63px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: $large-devices) {
+    padding-top: 125px;
+    padding-left: 120px;
+    padding-bottom: 16px;
+  }
+  
+}
+
+.news-section .news:last-of-type {
+  border-bottom: none;
+}

@@ -18,6 +18,10 @@
   }
 }
 
-.socials__icon:hover .footer__icon{
+.footer-block__menu_link:hover .footer-block__menu_icon {
+  fill: #808080;
+}
+
+.footer-block__menu_link:active .footer-block__menu_icon {
   fill: #808080;
 }

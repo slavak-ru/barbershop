@@ -1,0 +1,77 @@
+.form__label_text {
+  display: inline-block;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 50px;
+    
+  position: relative;
+
+  font-size: 18px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 33px;
+    height: 33px;
+    top: 0;
+    left: 5px;
+  
+  
+    border: 1px solid #e5ddd5;
+    background-color: #ffffff;
+
+  }
+
+}
+
+.form__input_checkbox:hover ~ .form__label_text {
+  &::before {
+    border-color: #d5c9bd;
+  }
+}
+
+.form__input_checkbox:checked ~ .form__label_text {
+  &::before {
+    content: "";
+    border-color: #e5ddd5;
+    background-color: #ffffff;
+    background-image: url(/img/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+  }
+}
+
+.form__input_checkbox:checked ~ .form__label_text:active {
+  &::before {
+    content: "";
+    border-color: #e5ddd5;
+    background-color: #d5c9bd;
+    background-image: none;
+  }
+}
+
+.form__label_checkbox:active .form__label_text {
+  color: #808080;
+  
+  &::before {
+    content: "";
+    border-color: #d5c9bd;
+    background-color: #d5c9bd;
+    background-image: url(/img/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+  }
+}
+
+.form__label_checkbox:hover .form__label_text {
+  color: #808080;
+
+  &::before {
+    content: "";
+    border-color: #d5c9bd;
+
+  }
+}
+

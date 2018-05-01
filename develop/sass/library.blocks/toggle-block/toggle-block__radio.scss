@@ -1,0 +1,44 @@
+.toggle-block__radio {
+  display: none;
+
+  &_1:checked ~ 
+    .toggle-block
+    .toggle-block__label_1 {
+      background-color: #ffffff;
+  }
+
+  &_1:checked ~ 
+    .features__block {
+      margin-left: 0;
+  }
+  
+  &_2:checked ~ 
+    .toggle-block
+    .toggle-block__label_2 {
+      background-color: #ffffff;
+  }
+  
+  &_2:checked ~ 
+    .features__block {
+      margin-left: -320px;
+
+      @media (min-width: $medium-devices) {
+        margin-left: 0;
+      }
+  }
+  
+  &_3:checked ~ 
+    .toggle-block
+    .toggle-block__label_3 {
+      background-color: #ffffff;
+  }
+
+  &_3:checked ~ 
+    .features__block {
+      margin-left: -640px;
+
+      @media (min-width: $medium-devices) {
+        margin-left: 0;
+      }
+  }
+}

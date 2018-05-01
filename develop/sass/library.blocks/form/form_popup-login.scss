@@ -1,0 +1,13 @@
+.form_popup-login {
+  width: 320px;
+  margin:auto;
+  
+  display: flex;
+  flex-direction: column;
+  
+  @media (min-width: $medium-devices) {
+    width: 460px;
+    
+  }
+
+}

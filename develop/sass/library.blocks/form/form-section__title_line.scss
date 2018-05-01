@@ -1,0 +1,41 @@
+.form-section__title_line {
+
+  @media (min-width: $medium-devices) {
+    position: relative;
+
+    &::before {
+      display: block;
+      content: "";
+      width: 140px;
+      height: 1px;
+
+      position: absolute;
+      top: 12px;
+      left: 0;
+
+      background-color: #e5ddd5;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      width: 140px;
+      height: 1px;
+
+      position: absolute;
+      top: 12px;
+      right: 0;
+      
+      background-color: #e5ddd5;
+    }
+  }
+
+  @media (min-width: $large-devices) {
+    &::after {
+      width: 280px;
+    }
+    &::before {
+      width: 280px;
+    }
+  }
+}

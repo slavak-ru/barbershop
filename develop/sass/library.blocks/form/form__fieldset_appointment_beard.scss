@@ -1,0 +1,18 @@
+.form__fieldset_appointment_beard {
+  padding-left: 19px;
+  margin-bottom: 13px;
+
+  @media (min-width: $medium-devices) {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $large-devices) {
+    padding-left: 48px;
+    padding-right: 50px;
+  }
+}

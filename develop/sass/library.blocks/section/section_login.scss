@@ -1,0 +1,22 @@
+.section_login {
+  background-color: #f8f5f2;
+  margin: auto;
+  padding-top: 30px;
+  padding-left: 0;
+  padding-right: 15px;
+  padding-bottom: 50px;
+  text-align: center;
+
+  @media (min-width: $medium-devices) {
+    padding-top: 65px;
+    padding-bottom: 16px;
+    padding-left: 0;
+    }
+  
+  @media (min-width: $large-devices) {
+    padding-bottom: 24px;
+    padding-left: 0;
+  }
+
+
+}

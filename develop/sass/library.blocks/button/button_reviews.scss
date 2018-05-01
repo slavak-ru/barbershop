@@ -1,0 +1,43 @@
+.button_reviews {
+  display: none;
+
+  width: 160px;
+  border: 1px solid #e5ddd5;
+  background-color: #aeaeae;
+
+  &:hover {
+    background-color: #f8f5f2;
+    border: 1px solid #d5c9bd;
+  }
+  
+  &:focus {
+    border: 1px solid #d5cabe;
+    outline: 1px solid #d5cabe;
+  }
+
+  &:active {
+    color: #958c84;
+    border: 1px solid #d5c9bd;
+    background-color: #d5c9bd;
+  }
+
+  @media (min-width: $medium-devices) {
+    display: block;
+    position: absolute;
+    top: 37px;
+    right: 65px;
+
+    color: #000000;
+    text-decoration: none;
+
+    border: 1px solid #e5ddd5;
+    background-color: #f8f5f2;
+
+  }
+
+  @media (min-width: $large-devices) {
+    top: 36px;
+    right: 120px;
+  }
+
+}

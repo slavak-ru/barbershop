@@ -13,21 +13,22 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-//  border: 1px solid blue;
+
 
   @media (min-width: $medium-devices) { 
-    max-width: $medium-devices;
-    height: 70px;
+    max-width: 690px;
+    height: 75px;
     margin: auto;
-    padding: 0 50px 0 45px;
-//    border: 1px solid red;
+    padding: 0;
 
+    
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+
   }
 
   @media (min-width: $large-devices) { 
-    max-width: 760px;
+    max-width: 960px;
   }
 }
 

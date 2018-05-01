@@ -1,0 +1,15 @@
+.victim__subject_large {
+  margin-bottom: 17px;
+
+  @media (min-width: $medium-devices) {
+    margin-bottom: 200px;
+    padding-right: 5px;
+    flex-grow: 0;
+  }
+
+  @media (min-width: $large-devices) {  
+      padding-right: 88px;
+      margin-bottom: 161px;
+      flex-grow: 0;
+  }
+}

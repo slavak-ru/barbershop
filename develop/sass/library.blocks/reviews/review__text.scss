@@ -1,0 +1,16 @@
+.review__text {
+  display: block;
+  width: 210px;
+  margin: 0;
+
+  font-size: 18px;
+
+  @media (min-width: $medium-devices) {
+    width: 360px;
+
+  }
+
+  @media (min-width: $large-devices) {
+    width: 430px;
+  }
+}

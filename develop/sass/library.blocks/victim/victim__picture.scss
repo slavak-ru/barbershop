@@ -1,0 +1,14 @@
+.victim__picture {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 17px;
+  
+  
+  
+  @media (min-width: $medium-devices) {
+    margin-bottom: 0;
+    height: 293px;
+  }
+
+}

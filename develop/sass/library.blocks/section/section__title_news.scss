@@ -1,0 +1,14 @@
+.section__title_news {
+
+  @media (min-width: $medium-devices) {
+    width: 100%;
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 60px;
+
+  }
+
+  @media (min-width: $large-devices) {
+    padding-left: 70px;
+  }
+}

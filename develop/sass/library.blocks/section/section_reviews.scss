@@ -1,0 +1,32 @@
+.section_reviews {
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 45px;
+  padding-top: 27px;
+  padding-left: 5px;
+  position: relative;
+  
+  overflow: hidden;
+
+
+  border-top: 1px solid #e5ddd5;
+  box-sizing: inherit;
+
+  @media (min-width: $medium-devices) {
+//    height: 160px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 46px;
+    padding-left: 64px;
+    padding-bottom: 71px;
+    
+    background-color: #f8f5f2;
+  }
+
+  @media (min-width: $large-devices) {
+    padding-left: 119px;
+    padding-bottom: 96px;
+  }
+
+}
+

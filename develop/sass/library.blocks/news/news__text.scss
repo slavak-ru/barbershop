@@ -1,0 +1,27 @@
+.news__text {
+  display: block;
+  width: 220px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-top: 12px;
+  padding: 0;
+  padding-left: 15px;
+
+  font-size: 18px;
+
+  @media (min-width: $medium-devices) {
+  //  display: inline-block;
+    margin-top: 0px;
+    vertical-align: top;
+    width: 215px;
+
+    &_hide {
+      display: none;
+    }
+  }
+
+  @media (min-width: $medium-devices) {
+    padding-left: 10px;
+  }
+
+}

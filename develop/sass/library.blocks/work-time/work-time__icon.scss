@@ -1,0 +1,21 @@
+.work-time__icon {
+  width: 58px;
+  height: 58px;
+
+  fill: #ffffff;
+
+  @media (min-width: $medium-devices) {
+    width: 72px;
+    height: 72px;
+    padding-top: 4px;
+  }
+  
+  @media (min-width: $large-devices) {
+    width: 145px;
+    height: 145px;
+    padding-top: 29px;
+    padding-bottom: 21px;
+    margin: 0 auto;
+
+  }
+}

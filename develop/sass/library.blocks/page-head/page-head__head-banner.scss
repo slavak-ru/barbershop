@@ -1,6 +1,6 @@
 .page-head__head-banner {
+//  display: none;
   height: 85px;
-  margin: 0;
   
   background-color: #242424;
 
@@ -10,6 +10,7 @@
   background-position: center;
 
   @media (min-width: $medium-devices) { 
+    display: block;
     height: 400px;
     order: 3;
     background-image: 
@@ -26,19 +27,25 @@
     background-image: 
       url(/img/logotype-desktop.svg),
       url(/img/back-desktop.jpg);
-    background-size: 400px 160px, auto 650px;
+    background-size: 368px 160px, auto 650px;
     background-position-y: 60px, top;
+//    background-position-x: center;
     background-repeat: no-repeat; 
+    
   }
 
-  @media (min-resolution: 1.5dppx) { 
-    height: 650px;
-    background-image: 
-      url(/img/logotype-desktop.svg),
-      url(/img/back-tablet@1x.jpg);
-    background-size: 400px 160px, auto 650px;
-    background-position-y: 60px, top;
-    background-repeat: no-repeat; 
+  @media  (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) { 
+
+    @media (min-width: $medium-devices) {
+      height: 650px;
+      background-image: 
+        url(/img/logotype-tablet.svg),
+        url(/img/back-tablet@1x.jpg);
+      background-size: 400px 160px, auto 650px;
+      background-position-y: 60px, top;
+      background-repeat: no-repeat; 
+    }
   }
 
 }
