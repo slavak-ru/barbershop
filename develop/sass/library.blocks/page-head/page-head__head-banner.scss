@@ -9,6 +9,8 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  z-index: 2;
+
   @media (min-width: $medium-devices) { 
     display: block;
     height: 400px;
@@ -31,6 +33,7 @@
     background-position-y: 60px, top;
 //    background-position-x: center;
     background-repeat: no-repeat; 
+
     
   }
 

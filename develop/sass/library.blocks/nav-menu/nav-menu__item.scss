@@ -1,9 +1,10 @@
 .nav-menu__item {
   display: block;
   
-
   line-height: 50px;
   list-style: none;
+
+  transition: all .5s;
 
   @media (min-width: $medium-devices) { 
 //    margin-right: 37px;
@@ -12,12 +13,50 @@
 
   @media (min-width: $large-devices) { 
     margin-right: 37px;
+  }
 
-    
+  &-2,
+  &-3, 
+  &-4, 
+  &-5,
+  &-6 {
+
+    transform: translateY(-500px);
+
+    @media (min-width: $medium-devices) { 
+      transition: none;
+      transform: translateY(0);
+    }
   }
 }
 
+.nav-menu__item-1 {
+  z-index: 10;
+}
 
+
+.burger-menu__checkbox:checked ~ 
+  .page-head__nav
+  .nav-menu
+  .nav-menu__item-2,
+.burger-menu__checkbox:checked ~ 
+  .page-head__nav
+  .nav-menu
+  .nav-menu__item-3,
+.burger-menu__checkbox:checked ~ 
+  .page-head__nav
+  .nav-menu
+  .nav-menu__item-4,
+.burger-menu__checkbox:checked ~ 
+  .page-head__nav
+  .nav-menu
+  .nav-menu__item-5,
+.burger-menu__checkbox:checked ~ 
+  .page-head__nav
+  .nav-menu
+  .nav-menu__item-6 {
+    transform: translateY(-0px); 
+}
 
 .burger-menu__checkbox:checked ~ 
   .page-head__nav
