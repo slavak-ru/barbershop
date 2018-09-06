@@ -1,5 +1,9 @@
-# barbershop2
+# BARBERSHOP
 Educational project with 
-    automatic building, 
+    automatic building (gulp), 
     use preprocessors (sass), 
-    use BEM methodology (partly).
+    use BEM naming.
+No JS or jQuery.
+
+### Demo: 
+https://slavak-ru.github.io/barbeshop/
