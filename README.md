@@ -6,4 +6,5 @@ Educational project with
 No JS or jQuery.
 
 ### Demo: 
-https://slavak-ru.github.io/barbeshop/
+https://slavak-ru.github.io/barbershop/
+
