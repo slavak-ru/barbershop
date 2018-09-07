@@ -93,10 +93,10 @@ gulp.task("symbols", function() {
 
 gulp.task("images", function() {
     return gulp.src(["develop/img/**/*.{png,jpg,gif}", "develop/img/*.svg"], {base: "develop"}, {since: gulp.lastRun("images")})
-        .pipe(imagemin([
-            imagemin.optipng({optimizationLevel: 3}),
-            imagemin.jpegtran({progressive: true})
-        ]))
+        // .pipe(imagemin([
+        //     imagemin.optipng({optimizationLevel: 3}),
+        //     imagemin.jpegtran({progressive: true})
+        // ]))
         .pipe(gulp.dest("production"))
         .pipe(debug({title: "images"}));
 });
