@@ -2372,7 +2372,8 @@
           -ms-flex-direction: row;
               flex-direction: row;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+      z-index: 10; }
     .supremacy_theme_white {
       margin-top: -185px;
       padding-top: 31px;
