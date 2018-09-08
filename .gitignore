@@ -5,8 +5,8 @@
 *.pdf
 *.psd
 *.sublime*
-# css/*.css
+css/*.css
 package-lock.json
 node_modules/
-# production/
+production/
 Thumbs.db
