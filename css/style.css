@@ -779,7 +779,7 @@
     top: 20px;
     right: 45px;
     /*    right: 10px; */
-    background-image: url(/img/user-icon.svg);
+    background-image: url(../img/user-icon.svg);
     background-repeat: no-repeat;
     background-size: 70%; }
   .form__input_icon_password::after {
@@ -791,7 +791,7 @@
     top: 20px;
     right: 45px;
     /*    right: 10px; */
-    background-image: url(/img/lock-icon.svg);
+    background-image: url(../img/lock-icon.svg);
     background-repeat: no-repeat;
     background-size: 70%; }
   .form__input_icon_login_page::after {
