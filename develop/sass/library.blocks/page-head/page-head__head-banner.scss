@@ -4,7 +4,7 @@
   
   background-color: #242424;
 
-  background-image: url(/img/logotype-mobile.svg);
+  background-image: url(../img/logotype-mobile.svg);
   background-size: 230px 35px;
   background-repeat: no-repeat;
   background-position: center;
@@ -16,8 +16,8 @@
     height: 400px;
     order: 3;
     background-image: 
-      url(/img/logotype-tablet.svg),
-      url(/img/back-tablet.jpg);
+      url(../img/logotype-tablet.svg),
+      url(../img/back-tablet.jpg);
     background-size: 390px 115px, auto 400px;
     background-position-y: 30px, center;
     background-repeat: no-repeat; 
@@ -27,8 +27,8 @@
   @media (min-width: $large-devices) { 
     height: 650px;
     background-image: 
-      url(/img/logotype-desktop.svg),
-      url(/img/back-desktop.jpg);
+      url(../img/logotype-desktop.svg),
+      url(../img/back-desktop.jpg);
     background-size: 368px 160px, auto 650px;
     background-position-y: 60px, top;
 //    background-position-x: center;
@@ -43,8 +43,8 @@
     @media (min-width: $medium-devices) {
       height: 650px;
       background-image: 
-        url(/img/logotype-tablet.svg),
-        url(/img/back-tablet@1x.jpg);
+        url(../img/logotype-tablet.svg),
+        url(../img/back-tablet@1x.jpg);
       background-size: 400px 160px, auto 650px;
       background-position-y: 60px, top;
       background-repeat: no-repeat; 
