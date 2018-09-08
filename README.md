@@ -1,10 +1,5 @@
 # BARBERSHOP
-Educational project with 
-    automatic building (gulp), 
-    use preprocessors (sass), 
-    use BEM naming.
-No JS or jQuery.
-
-### Demo: 
-https://slavak-ru.github.io/barbershop/
+It's just a demo.
+All source files on the main branch :
+https://github.com/slavak-ru/barbershop
 
