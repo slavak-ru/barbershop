@@ -4,6 +4,7 @@
   min-height: 136px;
   width: $mini-devices;
   margin: auto;
+  // z-index: -1;
 
   @media (min-width: $medium-devices) { 
     width: 100%;  

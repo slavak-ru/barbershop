@@ -1,12 +1,13 @@
 .nav-menu {
   margin: 0;
   padding: 0;
-
+  // display: flex;
+  // flex-direction: column;
   
   &_main{
 //    border: 1px solid red;
     @media (min-width: $medium-devices) { 
-      display: flex;
+      display: flex;  
       flex-direction: row;
       justify-content: space-around;
 

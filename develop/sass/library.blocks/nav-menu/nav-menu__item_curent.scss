@@ -1,0 +1,7 @@
+.nav-menu__item_curent {
+  order: 1;
+
+  @media (min-width: $medium-devices) { 
+    order: 0;
+  }
+}
