@@ -14,6 +14,11 @@
   @media (min-width: $large-devices) { 
     margin-right: 37px;
   }
+  
+  &-1 {
+    z-index: 6;
+    order: 0;
+  }
 
   &-2,
   &-3, 
@@ -22,18 +27,24 @@
   &-6 {
     transform: translateY(-500px);
     z-index: 0;
+    order: 1;
+  }
 
+  &-1,
+  &-2,
+  &-3, 
+  &-4, 
+  &-5,
+  &-6 {
     @media (min-width: $medium-devices) { 
       transition: none;
       transform: translateY(0);
+
+      z-index: 0;
+      order: 0;
     }
   }
 }
-
-.nav-menu__item-1 {
-  z-index: 6;
-}
-
 
 .burger-menu__checkbox:checked ~ 
   .page-head__nav
@@ -68,6 +79,5 @@
 
     @media (min-width: $medium-devices) { 
       border: none;
-//      margin-right: 37px;
     }
 }

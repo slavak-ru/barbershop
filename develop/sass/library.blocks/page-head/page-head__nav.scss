@@ -3,7 +3,8 @@
   
   overflow: hidden;
 
-  display: flex;
+  display: block;
+  // display: flex;
   flex-direction: column;
   flex-grow: 2;
 
@@ -15,12 +16,14 @@
 
 
   @media (min-width: $medium-devices) { 
+    display: flex;
+  flex-direction: column;
+  flex-grow: 2;
     max-width: 690px;
     height: 75px;
     margin: auto;
     padding: 0;
 
-    
     flex-direction: row;
     justify-content: space-around;
 
